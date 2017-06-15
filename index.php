@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--=============================================== 
-    Template Design By WpFreeware Team.
-    Author URI : http://www.wpfreeware.com/
-    ====================================================-->
-
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <title>WpF Degree : Home</title>
+     <title>Department of Computer Science and Engineering, CET</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="img/wpf-favicon.png"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- CSS
-    ================================================== -->       
+    ================================================== -->
     <!-- Bootstrap css file-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font awesome css file-->
@@ -28,23 +29,23 @@
     <!-- Superslide css file-->
     <link rel="stylesheet" href="css/superslides.css">
     <!-- Slick slider css file -->
-    <link href="css/slick.css" rel="stylesheet"> 
+    <link href="css/slick.css" rel="stylesheet">
     <!-- Circle counter cdn css file -->
-    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>  
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>
     <!-- smooth animate css file -->
-    <link rel="stylesheet" href="css/animate.css"> 
+    <link rel="stylesheet" href="css/animate.css">
     <!-- preloader -->
     <link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
     <!-- gallery slider css -->
-    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" />    
+    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" />
     <!-- Default Theme css file -->
     <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">
     <!-- Main structure css file -->
     <link href="style.css" rel="stylesheet">
-   
+
     <!-- Google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
-    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>    
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,9 +53,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
- 
+
   </head>
-  <body>    
+  <body>
 
     <!-- SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#"></a>
@@ -75,10 +76,8 @@
               </button>
               <!-- LOGO -->
               <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="index.html">WpF <span>Degree</span></a>              
-              <!-- IMG BASED LOGO  -->
-               <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>  -->            
-                     
+              <a class="navbar-brand" href="index.html">Department of <span>Computer Science & Engineering</span></a>
+
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
@@ -86,25 +85,25 @@
                 <li><a href="course-archive.html">Course</a></li>
                 <li><a href="scholarship.html">Scholarship</a></li>
                 <li><a href="events-archive.html">Events</a></li>
-                <li><a href="gallery.html">Gallery</a></li>                
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="blog-archive.html">Blog</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Page<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="404.html">404 Page</a></li>
                     <li><a href="#">Link Two</a></li>
-                    <li><a href="#">Link Three</a></li>               
+                    <li><a href="#">Link Three</a></li>
                   </ul>
-                </li>               
+                </li>
                 <li><a href="contact.html">Contact</a></li>
-              </ul>           
+              </ul>
             </div><!--/.nav-collapse -->
-          </div>     
-        </nav>  
+          </div>
+        </nav>
       </div>
-      <!-- END MENU -->    
+      <!-- END MENU -->
     </header>
-    <!--=========== END HEADER SECTION ================--> 
+    <!--=========== END HEADER SECTION ================-->
 
     <!--=========== BEGIN SLIDER SECTION ================-->
     <section id="slider">
@@ -113,7 +112,7 @@
           <div class="slider_area">
             <!-- Start super slider -->
             <div id="slides">
-              <ul class="slides-container">                          
+              <ul class="slides-container">
                 <li>
                   <img src="img/slider/2.jpg" alt="img">
                    <div class="slider_caption">
@@ -168,13 +167,13 @@
             <ul class="nav nav-tabs feed_tabs" id="myTab2">
               <li class="active"><a href="#news" data-toggle="tab">News</a></li>
               <li><a href="#notice" data-toggle="tab">Notice</a></li>
-              <li><a href="#events" data-toggle="tab">Events</a></li>         
+              <li><a href="#events" data-toggle="tab">Events</a></li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
               <!-- Start news tab content -->
-              <div class="tab-pane fade in active" id="news">                
+              <div class="tab-pane fade in active" id="news">
                 <ul class="news_tab">
                   <li>
                     <div class="media">
@@ -187,19 +186,6 @@
                        <a href="#">Dummy text of the printing and typesetting industry</a>
                        <span class="feed_date">27.02.15</span>
                       </div>
-                    </div>                    
-                  </li>
-                  <li>
-                    <div class="media">
-                      <div class="media-left">
-                        <a class="news_img" href="#">
-                          <img class="media-object" src="img/news.jpg" alt="img">
-                        </a>
-                      </div>
-                      <div class="media-body">
-                       <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>
-                      </div>
                     </div>
                   </li>
                   <li>
@@ -215,10 +201,23 @@
                       </div>
                     </div>
                   </li>
-                </ul>                
+                  <li>
+                    <div class="media">
+                      <div class="media-left">
+                        <a class="news_img" href="#">
+                          <img class="media-object" src="img/news.jpg" alt="img">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                       <a href="#">Dummy text of the printing and typesetting industry</a>
+                       <span class="feed_date">28.02.15</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
                 <a class="see_all" href="#">See All</a>
               </div>
-              <!-- Start notice tab content -->  
+              <!-- Start notice tab content -->
               <div class="tab-pane fade " id="notice">
                 <div class="single_notice_pane">
                   <ul class="news_tab">
@@ -233,7 +232,7 @@
                          <a href="#">Dummy text of the printing and typesetting industry</a>
                          <span class="feed_date">27.02.15</span>
                         </div>
-                      </div>                   
+                      </div>
                     </li>
                     <li>
                       <div class="media">
@@ -244,7 +243,7 @@
                         </div>
                         <div class="media-body">
                          <a href="#">Dummy text of the printing and typesetting industry</a>
-                         <span class="feed_date">28.02.15</span>             
+                         <span class="feed_date">28.02.15</span>
                         </div>
                       </div>
                     </li>
@@ -257,10 +256,10 @@
                         </div>
                         <div class="media-body">
                          <a href="#">Dummy text of the printing and typesetting industry</a>
-                         <span class="feed_date">28.02.15</span>             
+                         <span class="feed_date">28.02.15</span>
                         </div>
                       </div>
-                    </li>                                    
+                    </li>
                   </ul>
                   <ul class="news_tab">
                     <li>
@@ -285,7 +284,7 @@
                         </div>
                         <div class="media-body">
                          <a href="#">Dummy text of the printing and typesetting industry</a>
-                         <span class="feed_date">28.02.15</span>          
+                         <span class="feed_date">28.02.15</span>
                         </div>
                       </div>
                     </li>
@@ -301,9 +300,9 @@
                          <span class="feed_date">28.02.15</span>
                         </div>
                       </div>
-                    </li>                                    
+                    </li>
                   </ul>
-                </div>               
+                </div>
               </div>
               <!-- Start events tab content -->
               <div class="tab-pane fade " id="events">
@@ -330,7 +329,7 @@
                       </div>
                       <div class="media-body">
                        <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>                
+                       <span class="feed_date">28.02.15</span>
                       </div>
                     </div>
                   </li>
@@ -343,10 +342,10 @@
                       </div>
                       <div class="media-body">
                        <a href="#">Dummy text of the printing and typesetting industry</a>
-                       <span class="feed_date">28.02.15</span>                
+                       <span class="feed_date">28.02.15</span>
                       </div>
                     </div>
-                  </li>                  
+                  </li>
                 </ul>
                 <a class="see_all" href="#">See All</a>
               </div>
@@ -356,21 +355,21 @@
       </div>
       </div>
     </section>
-    <!--=========== END ABOUT US SECTION ================--> 
+    <!--=========== END ABOUT US SECTION ================-->
 
     <!--=========== BEGIN WHY US SECTION ================-->
     <section id="whyUs">
       <!-- Start why us top -->
-      <div class="row">        
+      <div class="row">
         <div class="col-lg-12 col-sm-12">
           <div class="whyus_top">
             <div class="container">
               <!-- Why us top titile -->
               <div class="row">
-                <div class="col-lg-12 col-md-12"> 
+                <div class="col-lg-12 col-md-12">
                   <div class="title_area">
                     <h2 class="title_two">Why Us</h2>
-                    <span></span> 
+                    <span></span>
                   </div>
                 </div>
               </div>
@@ -417,22 +416,22 @@
               <!-- End Why us top content  -->
             </div>
           </div>
-        </div>        
+        </div>
       </div>
       <!-- End why us top -->
 
       <!-- Start why us bottom -->
-      <div class="row">        
+      <div class="row">
         <div class="col-lg-12 col-sm-12">
-          <div class="whyus_bottom">            
+          <div class="whyus_bottom">
             <div class="slider_overlay"></div>
-            <div class="container">               
-              <div class="skills">                
+            <div class="container">
+              <div class="skills">
                 <!-- START SINGLE SKILL-->
                 <div class="col-lg-3 col-md-3 col-sm-3">
                  <div class="single_skill wow fadeInUp">
                    <div id="myStat" data-dimension="150" data-text="35%" data-info="" data-width="10" data-fontsize="25" data-percent="35" data-fgcolor="#999" data-bgcolor="#fff"  data-icon="fa-task"></div>
-                    <h4>Repeate Learners</h4>                      
+                    <h4>Repeate Learners</h4>
                   </div>
                 </div>
                 <!-- START SINGLE SKILL-->
@@ -443,23 +442,23 @@
                   </div>
                 </div>
                 <!-- START SINGLE SKILL-->
-                <div class="col-lg-3 col-md-3 col-sm-3">                 
+                <div class="col-lg-3 col-md-3 col-sm-3">
                   <div class="single_skill wow fadeInUp">
                     <div id="myStat2" data-dimension="150" data-text="100%" data-info="" data-width="10" data-fontsize="25" data-percent="100" data-fgcolor="#999" data-bgcolor="#fff"  data-icon="fa-task"></div>
                     <h4>Student Engagement</h4>
                   </div>
                 </div>
                 <!-- START SINGLE SKILL-->
-                <div class="col-lg-3 col-md-3 col-sm-3">                 
+                <div class="col-lg-3 col-md-3 col-sm-3">
                   <div class="single_skill wow fadeInUp">
                     <div id="myStat3" data-dimension="150" data-text="65%" data-info="" data-width="10" data-fontsize="25" data-percent="65" data-fgcolor="#999" data-bgcolor="#fff"  data-icon="fa-task"></div>
                     <h4>Certified Courses</h4>
                   </div>
                 </div>
               </div>
-            </div>            
+            </div>
           </div>
-        </div>        
+        </div>
       </div>
       <!-- End why us bottom -->
     </section>
@@ -470,10 +469,10 @@
       <div class="container">
        <!-- Our courses titile -->
         <div class="row">
-          <div class="col-lg-12 col-md-12"> 
+          <div class="col-lg-12 col-md-12">
             <div class="title_area">
               <h2 class="title_two">Our Courses</h2>
-              <span></span> 
+              <span></span>
             </div>
           </div>
         </div>
@@ -487,7 +486,7 @@
                   <div class="single_course">
                     <div class="singCourse_imgarea">
                       <img src="img/course-1.jpg" />
-                      <div class="mask">                         
+                      <div class="mask">
                         <a href="#" class="course_more">View Course</a>
                       </div>
                     </div>
@@ -506,45 +505,7 @@
                   <div class="single_course">
                     <div class="singCourse_imgarea">
                       <img src="img/course-2.jpg" />
-                      <div class="mask">                         
-                        <a href="#" class="course_more">View Course</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
-                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Richard Remus, Teacher</p>
-                    </div>
-                  </div>
-                </li> 
-                <li>
-                  <div class="single_course">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="#" class="course_more">View Course</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
-                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
-                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Richard Remus, Teacher</p>
-                    </div>
-                  </div>
-                </li>  
-                <li>
-                  <div class="single_course">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-2.jpg" />
-                      <div class="mask">                         
+                      <div class="mask">
                         <a href="#" class="course_more">View Course</a>
                       </div>
                     </div>
@@ -563,7 +524,7 @@
                   <div class="single_course">
                     <div class="singCourse_imgarea">
                       <img src="img/course-1.jpg" />
-                      <div class="mask">                         
+                      <div class="mask">
                         <a href="#" class="course_more">View Course</a>
                       </div>
                     </div>
@@ -577,12 +538,12 @@
                       <p>Richard Remus, Teacher</p>
                     </div>
                   </div>
-                </li> 
+                </li>
                 <li>
                   <div class="single_course">
                     <div class="singCourse_imgarea">
                       <img src="img/course-2.jpg" />
-                      <div class="mask">                         
+                      <div class="mask">
                         <a href="#" class="course_more">View Course</a>
                       </div>
                     </div>
@@ -596,7 +557,45 @@
                       <p>Richard Remus, Teacher</p>
                     </div>
                   </div>
-                </li>                
+                </li>
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-1.jpg" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
+                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="img/author.jpg" alt="img">
+                      <p>Richard Remus, Teacher</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-2.jpg" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Introduction To Matrix</a></h3>
+                    <p class="singCourse_price"><span>$20</span> Per One Month</p>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="img/author.jpg" alt="img">
+                      <p>Richard Remus, Teacher</p>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -604,17 +603,17 @@
         <!-- End Our courses content -->
       </div>
     </section>
-    <!--=========== END OUR COURSES SECTION ================-->  
+    <!--=========== END OUR COURSES SECTION ================-->
 
     <!--=========== BEGIN OUR TUTORS SECTION ================-->
     <section id="ourTutors">
       <div class="container">
        <!-- Our courses titile -->
         <div class="row">
-          <div class="col-lg-12 col-md-12"> 
+          <div class="col-lg-12 col-md-12">
             <div class="title_area">
               <h2 class="title_two">Our Tutors</h2>
-              <span></span> 
+              <span></span>
             </div>
           </div>
         </div>
@@ -629,7 +628,7 @@
                 <li>
                   <div class="single_tutors">
                     <div class="tutors_thumb">
-                      <img src="img/author.jpg" />                      
+                      <img src="img/author.jpg" />
                     </div>
                     <div class="singTutors_content">
                       <h3 class="tutors_name">Jame Burns</h3>
@@ -649,7 +648,7 @@
                 <li>
                   <div class="single_tutors">
                     <div class="tutors_thumb">
-                      <img src="img/course-1.jpg" />                      
+                      <img src="img/course-1.jpg" />
                     </div>
                     <div class="singTutors_content">
                       <h3 class="tutors_name">Jame Burns</h3>
@@ -669,7 +668,7 @@
                 <li>
                   <div class="single_tutors">
                     <div class="tutors_thumb">
-                      <img src="img/author.jpg" />                      
+                      <img src="img/author.jpg" />
                     </div>
                     <div class="singTutors_content">
                       <h3 class="tutors_name">Jame Burns</h3>
@@ -689,7 +688,7 @@
                 <li>
                   <div class="single_tutors">
                     <div class="tutors_thumb">
-                      <img src="img/course-1.jpg" />                      
+                      <img src="img/course-1.jpg" />
                     </div>
                     <div class="singTutors_content">
                       <h3 class="tutors_name">Jame Burns</h3>
@@ -709,7 +708,7 @@
                 <li>
                   <div class="single_tutors">
                     <div class="tutors_thumb">
-                      <img src="img/author.jpg" />                      
+                      <img src="img/author.jpg" />
                     </div>
                     <div class="singTutors_content">
                       <h3 class="tutors_name">Jame Burns</h3>
@@ -729,7 +728,7 @@
                 <li>
                   <div class="single_tutors">
                     <div class="tutors_thumb">
-                      <img src="img/course-1.jpg" />                      
+                      <img src="img/course-1.jpg" />
                     </div>
                     <div class="singTutors_content">
                       <h3 class="tutors_name">Jame Burns</h3>
@@ -745,7 +744,7 @@
                       </ul>
                     </div>
                   </div>
-                </li>                                             
+                </li>
               </ul>
             </div>
           </div>
@@ -760,10 +759,10 @@
       <div class="container">
        <!-- Our courses titile -->
         <div class="row">
-          <div class="col-lg-12 col-md-12"> 
+          <div class="col-lg-12 col-md-12">
             <div class="title_area">
               <h2 class="title_two">What our Student says</h2>
-              <span></span> 
+              <span></span>
             </div>
           </div>
         </div>
@@ -772,7 +771,7 @@
         <!-- Start Our courses content -->
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="studentsTestimonial_content">              
+            <div class="studentsTestimonial_content">
               <div class="row">
                 <!-- start single student testimonial -->
                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -782,7 +781,7 @@
                     </div>
                     <img class="stsTesti_img" src="img/author.jpg" alt="img">
                     <div class="stsTestimonial_content">
-                      <h3>Johnathan Doe</h3>                      
+                      <h3>Johnathan Doe</h3>
                       <span>Ex. Student</span>
                       <p>Software Department</p>
                     </div>
@@ -797,7 +796,7 @@
                     </div>
                     <img class="stsTesti_img" src="img/author.jpg" alt="img">
                     <div class="stsTestimonial_content">
-                      <h3>Johnathan Doe</h3>                      
+                      <h3>Johnathan Doe</h3>
                       <span>Ex. Student</span>
                       <p>Software Department</p>
                     </div>
@@ -812,7 +811,7 @@
                     </div>
                     <img class="stsTesti_img" src="img/author.jpg" alt="img">
                     <div class="stsTestimonial_content">
-                      <h3>Johnathan Doe</h3>                      
+                      <h3>Johnathan Doe</h3>
                       <span>Ex. Student</span>
                       <p>Software Department</p>
                     </div>
@@ -826,8 +825,8 @@
         <!-- End Our courses content -->
       </div>
     </section>
-    <!--=========== END STUDENTS TESTIMONIAL SECTION ================-->    
-    
+    <!--=========== END STUDENTS TESTIMONIAL SECTION ================-->
+
     <!--=========== BEGIN FOOTER SECTION ================-->
     <footer id="footer">
       <!-- Start footer top area -->
@@ -900,9 +899,9 @@
       </div>
       <!-- End footer bottom area -->
     </footer>
-    <!--=========== END FOOTER SECTION ================--> 
+    <!--=========== END FOOTER SECTION ================-->
 
-  
+
 
     <!-- Javascript Files
     ================================================== -->
@@ -912,7 +911,7 @@
     <!-- Preloader js file -->
     <script src="js/queryloader2.min.js" type="text/javascript"></script>
     <!-- For smooth animatin  -->
-    <script src="js/wow.min.js"></script>  
+    <script src="js/wow.min.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
     <!-- slick slider -->
@@ -920,15 +919,15 @@
     <!-- superslides slider -->
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.animate-enhanced.min.js"></script>
-    <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>   
+    <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
     <!-- for circle counter -->
     <script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
     <!-- Gallery slider -->
-    <script type="text/javascript" language="javascript" src="js/jquery.tosrus.min.all.js"></script>   
-   
+    <script type="text/javascript" language="javascript" src="js/jquery.tosrus.min.all.js"></script>
+
     <!-- Custom js-->
     <script src="js/custom.js"></script>
-    <!--=============================================== 
+    <!--===============================================
     Template Design By WpFreeware Team.
     Author URI : http://www.wpfreeware.com/
     ====================================================-->
