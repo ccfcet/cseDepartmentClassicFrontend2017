@@ -27,16 +27,26 @@
 
 <body>
 
-  <div class="menuButtonContainer" onclick="menuButtonToggle(this)">
+  <div class="menuButtonContainer" id="mainMenuButton" onclick="menuButtonToggle(this); actionNav(this);">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
   </div>
 
-  <div class="container-fluid">
+  <div id="mainMenu">
+      <h4 id="menuTitle">Menu</h4>
+      <a href="#" class="active">Home</a>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </ul>
+  </div>
+
+  <div class="container-fluid" id="mainContent">
 
     <div class="row" id="headerRow">
-      <h5 id="headingDepartmentText">Department of Computer Science & Engineering</h5>
+      <h4 id="headingDepartmentText">Department of Computer Science & Engineering</h4>
       <h6 id="headingCollegeText">College of Engineering Trivandrum</h6>
     </div>
 
