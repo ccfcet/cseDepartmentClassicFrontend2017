@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed|Raleway|Montserrat');
 
 body
 {
@@ -74,13 +74,22 @@ body
 }
 
 #mainMenu a {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #0077FF;
   color: #fff;
   display: block;
-  padding: 12px;
+  padding: 8px;
   text-decoration: none;
-  padding-left: 34px;
+  padding-left: 21px;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+}
+
+#mainMenu a:hover {
+  background-color: #1181FF;
 }
 
 #mainMenu ul {
@@ -91,7 +100,7 @@ body
 }
 
 h4#menuTitle {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 20px;
   padding-top: 12px;
   padding-bottom: 28px;
@@ -99,6 +108,7 @@ h4#menuTitle {
   margin-top: 14px;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
+  margin-bottom: 0px;
 }
 
 #mainContent {
