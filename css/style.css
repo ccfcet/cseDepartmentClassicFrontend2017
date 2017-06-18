@@ -86,10 +86,11 @@ body
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 1px;
+  border-color: #006DE7;
 }
 
 #mainMenu a:hover {
-  background-color: #1181FF;
+  background-color: #006DE7;
 }
 
 #mainMenu ul {
@@ -109,6 +110,7 @@ h4#menuTitle {
   border-style: solid;
   border-width: 0px 0px 1px 0px;
   margin-bottom: 0px;
+  border-color: #006DE7;
 }
 
 #mainContent {
@@ -116,4 +118,14 @@ h4#menuTitle {
   left : 0px;
   right: 0px;
   z-index: 0;
+}
+
+#mainContentOverlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 74px;
+  left: 250px;
+  background-color: rgba(0, 0, 0, 0.75);
 }

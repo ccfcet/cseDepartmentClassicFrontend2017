@@ -47,7 +47,8 @@
   </div>
 
   <div class="container-fluid" id="mainContent">
-
+    <div id="mainContentOverlay">
+    </div>
     <div class="row" id="headerRow">
       <h4 id="headingDepartmentText">Department of Computer Science & Engineering</h4>
       <h6 id="headingCollegeText">College of Engineering Trivandrum</h6>
