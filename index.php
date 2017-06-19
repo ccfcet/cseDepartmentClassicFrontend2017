@@ -48,11 +48,11 @@
   </div>
   <div id="mainMenuSub">
     <span id="mainMenuSubTitle">Information for:</span>
-    <a href="#">About</a>
-    <a href="#">Admissions</a>
-    <a href="#">Academics</a>
-    <a href="#">Campus Life</a>
-    <a href="#">Research</a>
+    <a href="#" id="mainMenuSubFirstItem">Students</a>
+    <a href="#">Faculty</a>
+    <a href="#">Alumni</a>
+    <a href="#">Employees</a>
+    <a href="#">Community</a>
   </div>
 </div>
 </div>

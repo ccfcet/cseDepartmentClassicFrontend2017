@@ -135,8 +135,8 @@ body
 #mainMenuSub a {
   /*font-family: 'Open Sans Condensed', sans-serif;*/
   font-family: 'Montserrat', sans-serif;
-  background-color: #0077FF;
-  color: #fff;
+  background-color: #F1F1F1;
+  color: #07f;
   display: block;
   padding: 8px;
   text-decoration: none;
@@ -146,7 +146,7 @@ body
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 1px;
-  border-color: #006DE7;
+  border-color: #DBDBDB;
 }
 
 #mainMenuSub a:hover {
@@ -154,6 +154,19 @@ body
   color: #07f;
   border: none;
   padding-bottom: 9px;
+}
+
+a#mainMenuSubFirstItem {
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: #DBDBDB;
+}
+
+a:hover#mainMenuSubFirstItem {
+  padding-top: 9px;
 }
 
 #mainMenuDivider {
@@ -165,6 +178,7 @@ body
   /*makes the menu scrollable*/
   overflow-y: auto;
   height: inherit;
+  background: white;
 }
 
 h4#menuTitle {
