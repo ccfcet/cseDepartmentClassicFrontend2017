@@ -37,7 +37,7 @@ function actionNav(element) {
     document.getElementById("mainMenu").style.display = "block";
     document.getElementById("mainContent").style.marginLeft = "250px";
     document.getElementById("mainContent").style.marginRight = "-250px";
-    document.getElementById("mainMenuButton").style.marginLeft = "-56px";
+    document.getElementById("mainMenuButton").style.marginLeft = "194px";
     document.getElementById("headingDepartmentText").style.marginLeft = "20px";
     document.getElementById("headingCollegeText").style.marginLeft = "21px";
     document.getElementById("mainContentOverlay").style.display = "block";

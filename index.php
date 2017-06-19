@@ -34,35 +34,42 @@
   </div>
 
   <div id="mainMenu">
-      <h4 id="menuTitle">Menu</h4>
-      <a href="#" class="active">Home</a>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
-    </ul>
-    <!-- <div id="mainMenuSub">
-      Information for:
-    </div> -->
+    <h4 id="menuTitle">Menu</h4>
+    <a href="#">About</a>
+    <a href="#">Admissions</a>
+    <a href="#">Academics</a>
+    <a href="#">Campus Life</a>
+    <a href="#">Research</a>
+  </ul>
+  <div id="mainMenuDivider">
+  </div>
+  <div id="mainMenuSub">
+    <span id="mainMenuSubTitle">Information for:</span>
+    <a href="#">About</a>
+    <a href="#">Admissions</a>
+    <a href="#">Academics</a>
+    <a href="#">Campus Life</a>
+    <a href="#">Research</a>
+  </div>
+</div>
+
+<div class="container-fluid" id="mainContent">
+  <div id="mainContentOverlay">
+  </div>
+  <div class="row" id="headerRow">
+    <a href="" style="text-decoration: none;"><h4 id="headingDepartmentText">Department of Computer Science & Engineering</h4></a>
+    <a href="http://www.cet.ac.in" style="text-decoration: none;"><h6 id="headingCollegeText">College of Engineering Trivandrum</h6></a>
   </div>
 
-  <div class="container-fluid" id="mainContent">
-    <div id="mainContentOverlay">
-    </div>
-    <div class="row" id="headerRow">
-      <h4 id="headingDepartmentText">Department of Computer Science & Engineering</h4>
-      <h6 id="headingCollegeText">College of Engineering Trivandrum</h6>
-    </div>
+</div>
 
-  </div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript - Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <!-- Latest compiled and minified JavaScript - Bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <script src="js/common.js"></script>
+<script src="js/common.js"></script>
 
 </body>
 
