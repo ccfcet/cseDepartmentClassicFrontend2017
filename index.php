@@ -58,7 +58,7 @@
 </div>
 
 <div class="container-fluid" id="mainContent">
-  <div id="mainContentOverlay">
+  <div id="mainContentOverlay" onclick="$('#mainMenuButton').click();">
   </div>
   <div class="row" id="headerRow">
     <a href="" style="text-decoration: none;"><h4 id="headingDepartmentText">Department of Computer Science & Engineering</h4></a>
