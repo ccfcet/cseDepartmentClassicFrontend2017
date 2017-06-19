@@ -43,7 +43,6 @@
     <a href="#">Academics</a>
     <a href="#">Campus Life</a>
     <a href="#">Research</a>
-  </ul>
   <div id="mainMenuDivider">
   </div>
   <div id="mainMenuSub">
