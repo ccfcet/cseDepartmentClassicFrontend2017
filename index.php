@@ -36,43 +36,55 @@
   <div id="mainMenu">
     <div id="menuTitleContainer">
       <h4 id="menuTitle">Menu</h4>
+    </div>
+    <div id="menuItemsContainer">
+      <ul>
+        <li onclick="toggleMenuNestedList(this)"><a href="#">About</a></li>
+        <!-- <ul id="AboutNestedList"> -->
+          <!-- <li class="mainMenuSubNestedItem"><a href="#">Leadership & Administration</a></li> -->
+          <!-- <li class="mainMenuSubNestedItem"><a href="#">Initiatives</a></li> -->
+          <!-- <li class="mainMenuSubNestedItem"><a href="#">News, Publications, and Facts</a></li> -->
+          <!-- <li class="mainMenuSubNestedItem"><a href="#">Careers</a></li> -->
+          <!-- <li class="mainMenuSubNestedItem"><a href="#">Visitor Information</a></li> -->
+          <!-- <li class="mainMenuSubNestedItem"><a href="#">Giving to the Department</a></li> -->
+        <!-- </ul> -->
+        <li onclick="location.href='#';"><a href="#">Admissions</a></li>
+        <li onclick="location.href='#';"><a href="#">Academics</a></li>
+        <li onclick="location.href='#';"><a href="#">Campus Life</a></li>
+        <li onclick="location.href='#';"><a href="#">Research</a></li>
+      </ul>
+      <div id="mainMenuDivider">
+      </div>
+      <div id="mainMenuSub">
+        <span id="mainMenuSubTitle">Information for:</span>
+        <ul>
+          <li id="mainMenuSubFirstItem" onclick="location.href='#';"><a href="#">Students</a></li>
+          <li onclick="location.href='#';"><a href="#">Faculty</a></li>
+          <li onclick="location.href='#';"><a href="#">Alumni</a></li>
+          <li onclick="location.href='#';"><a href="#">Employees</a></li>
+          <li onclick="location.href='#';"><a href="#">Community</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div id="menuItemsContainer">
-    <a href="#">About</a>
-    <a href="#">Admissions</a>
-    <a href="#">Academics</a>
-    <a href="#">Campus Life</a>
-    <a href="#">Research</a>
-  <div id="mainMenuDivider">
-  </div>
-  <div id="mainMenuSub">
-    <span id="mainMenuSubTitle">Information for:</span>
-    <a href="#" id="mainMenuSubFirstItem">Students</a>
-    <a href="#">Faculty</a>
-    <a href="#">Alumni</a>
-    <a href="#">Employees</a>
-    <a href="#">Community</a>
-  </div>
-</div>
-</div>
 
-<div class="container-fluid" id="mainContent">
-  <div id="mainContentOverlay" onclick="$('#mainMenuButton').click();">
-  </div>
-  <div class="row" id="headerRow">
-    <h4 id="headingDepartmentText"><a href="" style="text-decoration: none;">Department of Computer Science & Engineering</a></h4>
-    <h6 id="headingCollegeText"><a href="http://www.cet.ac.in" style="text-decoration: none;">College of Engineering Trivandrum</a></h6>
+  <div class="container-fluid" id="mainContent">
+    <div id="mainContentOverlay" onclick="$('#mainMenuButton').click();">
+    </div>
+    <div class="row" id="headerRow">
+      <h4 id="headingDepartmentText"><a href="" style="text-decoration: none;">Department of Computer Science & Engineering</a></h4>
+      <h6 id="headingCollegeText"><a href="http://www.cet.ac.in" style="text-decoration: none;">College of Engineering Trivandrum</a></h6>
+    </div>
+
   </div>
 
-</div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript - Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!-- Latest compiled and minified JavaScript - Bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script src="js/common.js"></script>
+  <script src="js/common.js"></script>
 
 </body>
 
