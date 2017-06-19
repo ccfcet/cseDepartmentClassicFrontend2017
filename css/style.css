@@ -150,8 +150,8 @@ body
 }
 
 #mainMenuSub a:hover {
-  background-color: #FFF;
-  color: #07f;
+  background-color: #07F;
+  color: #fff;
   border: none;
   padding-bottom: 9px;
 }
