@@ -61,8 +61,8 @@
   <div id="mainContentOverlay" onclick="$('#mainMenuButton').click();">
   </div>
   <div class="row" id="headerRow">
-    <a href="" style="text-decoration: none;"><h4 id="headingDepartmentText">Department of Computer Science & Engineering</h4></a>
-    <a href="http://www.cet.ac.in" style="text-decoration: none;"><h6 id="headingCollegeText">College of Engineering Trivandrum</h6></a>
+    <h4 id="headingDepartmentText"><a href="" style="text-decoration: none;">Department of Computer Science & Engineering</a></h4>
+    <h6 id="headingCollegeText"><a href="http://www.cet.ac.in" style="text-decoration: none;">College of Engineering Trivandrum</a></h6>
   </div>
 
 </div>

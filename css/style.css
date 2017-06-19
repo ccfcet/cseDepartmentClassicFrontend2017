@@ -50,24 +50,30 @@ body
 }
 
 #headingDepartmentText {
-  font-family: 'Open Sans Condensed', sans-serif;
   /*font-family: 'Montserrat', sans-serif;*/
   margin-left: 79px;
-  color: #FFFFFF;
   top: 6px;
   position: relative;
+}
+
+#headingDepartmentText a {
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
 }
 
 #headingCollegeText {
-  font-family: 'Raleway', sans-serif;
   margin-left: 80px;
-  color: #FFFFFF;
-  top: 4px;
+  top: 2px;
   position: relative;
   margin-bottom: -1px;
+  padding-bottom: 20px;
+}
+
+#headingCollegeText a {
   font-weight: 500;
-  padding-bottom: 22px;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
 }
 
 #mainMenu {
