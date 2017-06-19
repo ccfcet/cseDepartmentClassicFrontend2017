@@ -34,7 +34,10 @@
   </div>
 
   <div id="mainMenu">
-    <h4 id="menuTitle">Menu</h4>
+    <div id="menuTitleContainer">
+      <h4 id="menuTitle">Menu</h4>
+  </div>
+  <div id="menuItemsContainer">
     <a href="#">About</a>
     <a href="#">Admissions</a>
     <a href="#">Academics</a>
@@ -51,6 +54,7 @@
     <a href="#">Campus Life</a>
     <a href="#">Research</a>
   </div>
+</div>
 </div>
 
 <div class="container-fluid" id="mainContent">

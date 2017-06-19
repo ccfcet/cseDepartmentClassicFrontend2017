@@ -3,8 +3,10 @@
 $(window).on("resize", function () {
   document.getElementById("headerRow").style.height = "auto";
   var height = $('#headerRow').css("height");
-  // console.log(height);
+  var windowHeight = $(window).height();
+  // console.log(windowHeight);
   document.getElementById("headerRow").style.height = height;
+  document.getElementById("menuItemsContainer").style.height = (parseInt(windowHeight)-parseInt(height.replace(/px/,"")))+"px";
   if(height != "74px")
   {
     document.getElementById("menuTitle").style.marginTop = (parseInt("14px".replace(/px/,"")) + ((parseInt(height.replace(/px/,""))-parseInt("74px".replace(/px/,"")))/2))+"px";
