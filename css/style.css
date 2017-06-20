@@ -127,7 +127,7 @@ body
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 1px;
-  border-color: #006DE7;
+  border-color: #07F;
   padding-bottom: 7px;
 }
 
@@ -202,7 +202,19 @@ body
   padding-bottom: 8px;
 }
 
-li#mainMenuSubFirstItem {
+#mainMenuSub li.change {
+  background-color: #07F;
+  color: #FFF;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #FFF;
+  padding-bottom: 7px;
+}
+
+#mainMenuSub li.mainMenuSubFirstItem {
   border-style: solid;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -211,8 +223,37 @@ li#mainMenuSubFirstItem {
   border-color: #DBDBDB;
 }
 
-li:hover#mainMenuSubFirstItem {
+#mainMenuSub li:hover.mainMenuSubFirstItem {
   padding-top: 8px;
+  border: none;
+}
+
+#mainMenuSub li.mainMenuSubFirstItem.change {
+  padding-top: 8px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #FFF;
+}
+
+#mainMenuSub li:hover.mainMenuSubFirstItem.change {
+  padding-top: 8px;
+  border-top-width: 0px;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+#mainMenu .mainMenuSubNested li {
+  background-color: #0077ffe6;
+  color: #fff;
+  border-color: #006DE7;
+  padding-left: 40px;
+}
+
+#mainMenu .mainMenuSubNested li:hover {
+  background-color: #07fc;
+  color: #FFF;
+  border-color: #FFFFFF;
 }
 
 #mainMenuDivider {
@@ -257,6 +298,6 @@ h4#menuTitle {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-ul.mainMenuNested {
+ul.mainMenuNested, ul.mainMenuSubNested {
   display: none;
 }
