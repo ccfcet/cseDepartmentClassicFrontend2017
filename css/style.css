@@ -119,6 +119,37 @@ body
   padding-bottom: 8px;
 }
 
+#mainMenu li.change {
+  background-color: #FFF;
+  color: #07f;
+  border-style: solid;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #006DE7;
+  padding-bottom: 7px;
+}
+
+#mainMenu .mainMenuNested li {
+  background-color: #05050505;
+  color: #07f;
+  border-color: #DBDBDB;
+  padding-left: 40px;
+}
+
+#mainMenu .mainMenuNested li:hover {
+  background-color: #F1F1F1;
+  color: #07f;
+  border-color: #FFFFFF;
+}
+
+#mainMenu .glyphicon {
+  float: right;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
 #mainMenuSub {
   font-family: 'Montserrat', sans-serif;
   background-color: #FFFFFF;
@@ -224,4 +255,8 @@ h4#menuTitle {
   top: 74px;
   left: 250px;
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+ul.mainMenuNested {
+  display: none;
 }

@@ -31,6 +31,36 @@ function menuButtonToggle(x) {
   x.classList.toggle("change");
 }
 
+/* For accodion menu action */
+
+function closeAllLists() {
+
+}
+
+function toggleMenuNestedList(x) {
+  var string = "ul#"+x.id.replace("Button","");
+  // console.log(x.id);
+  // uses jquery
+  var display = $(string).css("display");
+  string = string.replace("ul#","");
+  var string2 = "glyphicon"+string.replace("NestedList","");
+  if(display == "none")
+  {
+    closeAllLists();
+    document.getElementById(string).style.display = "block";
+    document.getElementById(string2).classList.remove('glyphicon-chevron-down');
+    document.getElementById(string2).classList.add('glyphicon-chevron-up');
+  }
+  else
+  {
+    document.getElementById(string).style.display = "none";
+    document.getElementById(string2).classList.remove('glyphicon-chevron-up');
+    document.getElementById(string2).classList.add('glyphicon-chevron-down');
+  }
+  x.classList.toggle("change");
+  // console.log(string);
+}
+
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function actionNav(element) {
   if (element.classList.contains('change'))

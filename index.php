@@ -39,17 +39,30 @@
     </div>
     <div id="menuItemsContainer">
       <ul>
-        <li onclick="toggleMenuNestedList(this)"><a href="#">About</a></li>
-        <!-- <ul id="AboutNestedList"> -->
-          <!-- <li class="mainMenuSubNestedItem"><a href="#">Leadership & Administration</a></li> -->
-          <!-- <li class="mainMenuSubNestedItem"><a href="#">Initiatives</a></li> -->
-          <!-- <li class="mainMenuSubNestedItem"><a href="#">News, Publications, and Facts</a></li> -->
-          <!-- <li class="mainMenuSubNestedItem"><a href="#">Careers</a></li> -->
-          <!-- <li class="mainMenuSubNestedItem"><a href="#">Visitor Information</a></li> -->
-          <!-- <li class="mainMenuSubNestedItem"><a href="#">Giving to the Department</a></li> -->
-        <!-- </ul> -->
-        <li onclick="location.href='#';"><a href="#">Admissions</a></li>
-        <li onclick="location.href='#';"><a href="#">Academics</a></li>
+        <li id="AboutNestedListButton" onclick="toggleMenuNestedList(this)"><a href="#">About</a><span id="glyphiconAbout" class="glyphicon glyphicon-chevron-down"></span></li>
+        <ul id="AboutNestedList" class="mainMenuNested">
+          <li onclick="location.href='#';"><a href="#">Leadership and Administration</a></li>
+          <!-- <li><a href="#">Initiatives</a></li> -->
+          <!-- <li><a href="#">News, Publications, and Facts</a></li> -->
+          <!-- <li><a href="#">Careers</a></li> -->
+          <li onclick="location.href='#';"><a href="#">Visitor Information</a></li>
+          <!-- <li><a href="#">Giving to the Department</a></li> -->
+        </ul>
+        <li id="AdmissionsNestedListButton" onclick="toggleMenuNestedList(this)"><a href="#">Admissions</a><span id="glyphiconAdmissions" class="glyphicon glyphicon-chevron-down"></span></li>
+        <ul id="AdmissionsNestedList" class="mainMenuNested">
+          <li onclick="location.href='#';"><a href="#">Undergraduate Admissions</a></li>
+          <li onclick="location.href='#';"><a href="#">Graduate Admissions</a></li>
+          <!-- <li onclick="location.href='#';"><a href="#">Financial Aid and Scholarships</a></li> -->
+        </ul>
+        <li id="AcademicsNestedListButton" onclick="toggleMenuNestedList(this)"><a href="#">Academics</a><span id="glyphiconAcademics" class="glyphicon glyphicon-chevron-down"></span></li>
+        <ul id="AcademicsNestedList" class="mainMenuNested">
+          <li onclick="location.href='#';"><a href="#">Academic Programs</a></li>
+          <li onclick="location.href='#';"><a href="#">Faculties</a></li>
+          <li onclick="location.href='#';"><a href="#">Awards and Highlights</a></li>
+          <li onclick="location.href='#';"><a href="#">Facilities</a></li>
+          <li onclick="location.href='#';"><a href="#">Library</a></li>
+          <li onclick="location.href='#';"><a href="#">Academic Resources</a></li>
+        </ul>
         <li onclick="location.href='#';"><a href="#">Campus Life</a></li>
         <li onclick="location.href='#';"><a href="#">Research</a></li>
       </ul>
@@ -59,6 +72,14 @@
         <span id="mainMenuSubTitle">Information for:</span>
         <ul>
           <li id="mainMenuSubFirstItem" onclick="location.href='#';"><a href="#">Students</a></li>
+          <ul id="AcademicsNestedList" class="mainMenuNested">
+            <li onclick="location.href='#';"><a href="#">Academic Programs</a></li>
+            <li onclick="location.href='#';"><a href="#">Faculties</a></li>
+            <li onclick="location.href='#';"><a href="#">Awards and Highlights</a></li>
+            <li onclick="location.href='#';"><a href="#">Facilities</a></li>
+            <li onclick="location.href='#';"><a href="#">Library</a></li>
+            <li onclick="location.href='#';"><a href="#">Academic Resources</a></li>
+          </ul>
           <li onclick="location.href='#';"><a href="#">Faculty</a></li>
           <li onclick="location.href='#';"><a href="#">Alumni</a></li>
           <li onclick="location.href='#';"><a href="#">Employees</a></li>
