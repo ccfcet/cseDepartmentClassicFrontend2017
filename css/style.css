@@ -301,3 +301,10 @@ h4#menuTitle {
 ul.mainMenuNested, ul.mainMenuSubNested {
   display: none;
 }
+
+#contentsContainer {
+  display: block;
+  width: 100%;
+  position: absolute;
+  margin-left: -15px;
+}

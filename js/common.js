@@ -7,12 +7,14 @@ $(window).on("resize", function () {
   // console.log(windowHeight);
   document.getElementById("headerRow").style.height = height;
   document.getElementById("menuItemsContainer").style.height = (parseInt(windowHeight)-parseInt(height.replace(/px/,"")))+"px";
+  document.getElementById("contentsContainer").style.height = (parseInt(windowHeight)-parseInt(height.replace(/px/,"")))+"px";
   if(height != "74px")
   {
     document.getElementById("menuTitle").style.marginTop = (parseInt("14px".replace(/px/,"")) + ((parseInt(height.replace(/px/,""))-parseInt("74px".replace(/px/,"")))/2))+"px";
     document.getElementById("menuTitle").style.paddingBottom = (parseInt("28px".replace(/px/,"")) + ((parseInt(height.replace(/px/,""))-parseInt("74px".replace(/px/,"")))/2))+"px";
     document.getElementById("mainMenuButton").style.marginTop = (parseInt("17px".replace(/px/,"")) + ((parseInt(height.replace(/px/,""))-parseInt("74px".replace(/px/,"")))/2))+"px";
     document.getElementById("mainContentOverlay").style.top = height;
+    document.getElementById("contentsContainer").style.top = height;
   }
   else
   {
@@ -20,6 +22,7 @@ $(window).on("resize", function () {
     document.getElementById("menuTitle").style.paddingBottom = "28px";
     document.getElementById("mainMenuButton").style.marginTop = "17px";
     document.getElementById("mainContentOverlay").style.top = "74px";
+    document.getElementById("contentsContainer").style.top = "74px";
   }
 }).resize();
 
