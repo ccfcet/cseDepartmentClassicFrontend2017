@@ -27,20 +27,37 @@
 
 <body>
 
-  <!-- main menu -->
-  <?php require("layout/mainMenu.php") ?>
+  <?php
 
-  <!-- before content -->
-  <?php require("layout/beforeContent.php") ?>
+  // main menu
+  require("layout/mainMenu.php")
 
-  <!-- content starts here -->
+  ?>
 
-  hello world :)
+  <?php
 
-  <!-- content ends here -->
+  // before content
+  require("layout/beforeContent.php")
 
-  <!-- after content -->
-  <?php require("layout/afterContent.php") ?>
+  ?>
+
+  <?php
+
+  // content starts here
+  require("elements/homePage/homePageLanding.php")
+  // content ends here
+
+  ?>
+
+
+
+  <?php
+
+  // after content
+
+  require("layout/afterContent.php")
+
+  ?>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
