@@ -132,7 +132,7 @@ body
 }
 
 #mainMenu .mainMenuNested li {
-  background-color: #05050505;
+  background-color: #fafafa;
   color: #07f;
   border-color: #DBDBDB;
   padding-left: 40px;
@@ -244,14 +244,14 @@ body
 }
 
 #mainMenu .mainMenuSubNested li {
-  background-color: #0077ffe6;
+  background-color: #1984ff;
   color: #fff;
   border-color: #006DE7;
   padding-left: 40px;
 }
 
 #mainMenu .mainMenuSubNested li:hover {
-  background-color: #07fc;
+  background-color: #3392ff;
   color: #FFF;
   border-color: #FFFFFF;
 }
