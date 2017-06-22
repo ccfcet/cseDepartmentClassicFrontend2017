@@ -29,33 +29,24 @@
 
   <?php
 
+  // Session Handler.
+  require("session.php");
+
+  // Defined CONSTANTS
+  require("CONSTANTS.php");
+
   // main menu
-  require("layout/mainMenu.php")
-
-  ?>
-
-  <?php
+  require("layout/mainMenu.php");
 
   // before content
-  require("layout/beforeContent.php")
-
-  ?>
-
-  <?php
+  require("layout/beforeContent.php");
 
   // content starts here
-  require("elements/homePage/homePageLanding.php")
+  require("elements/homePage/homePageLanding.php");
   // content ends here
 
-  ?>
-
-
-
-  <?php
-
   // after content
-
-  require("layout/afterContent.php")
+  require("layout/afterContent.php");
 
   ?>
 
