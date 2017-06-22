@@ -43,7 +43,7 @@ require("../../../CONSTANTS.php");
   background-position: 0 -15px;
 }
 
-@media screen and (max-height: 599px) and (max-width: 703px), screen and (min-height: 400px) {
+@media screen and (max-height: 599px) and (max-width: 703px) {
 
   #bitNight20171 {
     background-image: url('<?php echo SITE_SERVER_BASE ?>assets/images/homeLanding/bitNight20172.jpg');
@@ -63,6 +63,29 @@ require("../../../CONSTANTS.php");
 
   #landingDisplayButton {
     left: 8px;
+    top: 292px;
+  }
+}
+
+@media screen and (min-height: 400px) {
+  #bitNight20171 {
+    background-image: url('<?php echo SITE_SERVER_BASE ?>assets/images/homeLanding/bitNight20172.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #landingDisplayText {
+    left: 38px;
+    top: 165px;
+  }
+
+  #landingDisplayTextSub {
+    left: 38px;
+    top: 221px;
+  }
+
+  #landingDisplayButton {
+    left: 38px;
     top: 292px;
   }
 }
@@ -102,18 +125,18 @@ require("../../../CONSTANTS.php");
   }
 
   #landingDisplayText {
-    left: 98px;
-    top: 300px;
+    left: 58px;
+    top: 280px;
   }
 
   #landingDisplayTextSub {
-    left: 98px;
-    top: 356px;
+    left: 58px;
+    top: 336px;
   }
 
   #landingDisplayButton {
-    left: 98px;
-    top: 427px;
+    left: 58px;
+    top: 407px;
   }
 }
 
@@ -224,17 +247,17 @@ require("../../../CONSTANTS.php");
 
 @media screen and (min-height: 400px) and (min-width: 900px) and (max-height: 599px) and (max-width: 1100px) {
   #landingDisplayText {
-    left: 8px;
+    left: 38px;
     top: 205px;
   }
 
   #landingDisplayTextSub {
-    left: 8px;
+    left: 38px;
     top: 261px;
   }
 
   #landingDisplayButton {
-    left: 8px;
+    left: 38px;
     top: 332px;
   }
 }
