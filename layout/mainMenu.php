@@ -1,4 +1,4 @@
-<div class="menuButtonContainer" id="mainMenuButton" onclick="menuButtonToggle(this); actionNav(this);">
+<div class="menuButtonContainer" id="mainMenuButton" onclick="menuToggle(this);">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>

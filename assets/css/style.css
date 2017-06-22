@@ -24,6 +24,11 @@ body
   transition: 0.4s;
 }
 
+.transparent.bar1, .transparent.bar2, .transparent.bar3
+{
+  background-color: rgba(255,255,255,0.5);
+}
+
 .change .bar1
 {
   -webkit-transform: rotate(-45deg) translate(-7px, 7px) ;
@@ -47,6 +52,12 @@ body
   background: #0077FF;
   position: fixed;
   width: 100%;
+  z-index: 1;
+}
+
+#headerRow.transparent
+{
+  background: none;
 }
 
 #headingDepartmentText {
@@ -60,6 +71,14 @@ body
   color: #FFFFFF;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
+}
+
+.transparent #headingDepartmentText a {
+  color: rgba(255,255,255,0.8);
+}
+
+.transparent #headingCollegeText a {
+  color: rgba(255,255,255,0.8);
 }
 
 #headingCollegeText {
