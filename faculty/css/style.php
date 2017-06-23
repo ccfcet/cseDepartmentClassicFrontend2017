@@ -11,14 +11,17 @@
   margin: auto;
 */}
 
+/*
 #profDP{
   padding-top: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/*
+
 #profIMG{
- background-image: url('<?php echo SITE_SERVER_BASE ?>faculty/nizar.jpg');
+ background-image: url('<?php echo SITE_SERVER_BASE ?>/faculty/nizar.jpg');
+
+  background-size: 250px 250px;
  height: 250px;
  width: 250px;
  display: block;
@@ -30,7 +33,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 119, 0.19);
 #profIMG:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 150, 0.5), 0 6px 20px 0 rgba(0, 0, 150, 0.19);
 }
+
 */
+
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

@@ -12,6 +12,7 @@
 
 <div id="profDP">
     <div id="profIMG" class="img-circle" ></div>
+    
 </div>
 
 <div id="profName">
