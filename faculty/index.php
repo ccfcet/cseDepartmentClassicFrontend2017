@@ -11,7 +11,7 @@
 
 
 <div id="profDP">
-    <img id="profIMG" class="img-circle" src="nizar.jpg" alt="Dr.Abdul Nizar"  />
+    <div id="profIMG" class="img-circle" ></div>
 </div>
 
 <div id="profName">
@@ -135,10 +135,3 @@
 
 
 </div>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript - Bootstrap -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  
