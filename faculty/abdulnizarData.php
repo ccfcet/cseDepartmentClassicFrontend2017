@@ -23,7 +23,7 @@
 
   <div class="col-md-3 card" style="margin-left:5%; ">
     <div class="cardHeader">
-      <p><i class="material-icons" style="font-size:20px;color:#FFFFFF;padding-left: 30%;" >call</i>  Contact</p>
+      <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 30%;" >call</i>  Contact</p>
     </div>
 
     <div class="row">
@@ -67,7 +67,7 @@
   <div class="col-md-4 card">
 
     <div class="cardHeader">
-      <p><i class="material-icons" style="font-size:20px;color:#FFFFFF;padding-left: 5%;" >school</i> Professional Qualifications</p>
+      <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >school</i> Professional Qualifications</p>
     </div>
 
     <div class="row">
@@ -106,7 +106,7 @@
 
   <div class="col-md-3 card">
     <div class="cardHeader">
-      <p><i class="material-icons" style="font-size:20px;color:#FFFFFF;padding-left: 5%;" >grade</i>Areas of Interest</p>
+      <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >grade</i>Areas of Interest</p>
     </div>
 
     <div class="row">
