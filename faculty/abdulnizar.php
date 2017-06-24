@@ -1,10 +1,10 @@
 <?php
 
 // Session Handler.
-require("session.php");
+require("../session.php");
 
 // Defined CONSTANTS
-require("CONSTANTS.php");
+require("../CONSTANTS.php");
 
 ?>
 <!doctype html>
@@ -14,7 +14,7 @@ require("CONSTANTS.php");
 
   <meta charset="utf-8">
 
-  <title>Department of Computer Science & Engineering, CET</title>
+  <title>Dr. Abdul Nizar, Department of Computer Science & Engineering, CET</title>
   <meta name="description" content="Official website of Department of Computer Science & Engineering">
   <meta name="author" content="Web Team, CET">
 
@@ -25,7 +25,7 @@ require("CONSTANTS.php");
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo SITE_SERVER_BASE?>favicon.ico" type="image/x-icon">
 
   <!-- Latest compiled and minified CSS - Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -39,17 +39,17 @@ require("CONSTANTS.php");
   <?php
 
   // main menu
-  require("layout/mainMenu.php");
+  require("../layout/mainMenu.php");
 
   // before content
-  require("layout/beforeContent.php");
+  require("../layout/beforeContent.php");
 
   // content starts here
-  require("faculty/index.php");
+  require("abdulnizarData.php");
   // content ends here
 
   // after content
-  require("layout/afterContent.php");
+  require("../layout/afterContent.php");
 
   ?>
 
