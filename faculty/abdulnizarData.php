@@ -26,7 +26,7 @@
       <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 30%;" >call</i>  Contact</p>
     </div>
 
-    <div class="row">
+    <div class="row noMargin">
 
       <div class=" col-md-3">
         <p> Phone:</p>
@@ -38,7 +38,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row noMargin">
 
       <div class="col-md-3">
         <p> Email:</p>
@@ -50,7 +50,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row noMargin">
 
       <div class="col-md-3">
         <p> Office:</p>
@@ -70,7 +70,7 @@
       <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >school</i> Professional Qualifications</p>
     </div>
 
-    <div class="row">
+    <div class="row noMargin">
       <div class="col-md-2">
         <p> B-Tech:</p>
       </div>
@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row noMargin">
       <div class="col-md-2">
         <p> M-Tech:</p>
       </div>
@@ -91,7 +91,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row noMargin">
       <div class="col-md-2">
         <p> PhD</p>
       </div>
@@ -131,7 +131,7 @@
            <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >grade</i>Professional Experience</p>  
         </div>
 
-        <div class="row">
+        <div class="row noMargin">
             <div class="col-md-2">
               <p> 1990 - 1992</p>
             </div>
@@ -141,7 +141,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row noMargin">
             <div class="col-md-2">
               <p> </p>
             </div>
@@ -152,7 +152,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row noMargin">
             <div class="col-md-2">
               <p> </p>
             </div>
@@ -170,7 +170,7 @@
            <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >grade</i>Contributions in professional front</p>  
         </div>
 
-        <div class="row">
+        <div class="row noMargin">
             <div class="col-md-2">
               <p>  1996 – 1997</p>
             </div>
@@ -180,7 +180,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row noMargin">
             <div class="col-md-2">
               <p> 2003-2005</p>
             </div>
@@ -191,7 +191,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row noMargin">
             <div class="col-md-2">
               <p>2003-2005</p>
             </div>
@@ -202,7 +202,7 @@
             
         </div>
 
-        <div class="row">
+        <div class="row noMargin">
             <div class="col-md-2">
               <p> November-December 2004</p>
             </div>
@@ -212,7 +212,7 @@
             </div>
             
         </div>
-        <div class="row">
+        <div class="row noMargin">
             <div class="col-md-2">
               <p> 2000 - 2001</p>
             </div>
@@ -235,7 +235,7 @@
 
       <div class="col-md-11 card" >
         <div class="cardHeader">
-           <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >grade</i>Publications</p>  
+           <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 2%;" >grade</i>Publications</p>  
         </div>
          
         <!--IMPLEMENT THE BELOW THING WITH LISTS!!!!-->

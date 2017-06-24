@@ -68,3 +68,10 @@ require("../../CONSTANTS.php");
   color: #FFFFFF;
 
 }
+
+
+.noMargin{
+  margin-top: 0px;
+  margin-left:0px;
+  margin-right: 0px;
+}
