@@ -10,8 +10,8 @@ require("../../CONSTANTS.php");
   background-color:#0077FF;
   color: #FFFFFF;
   font-family: 'Raleway', sans-serif;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin:auto;
+  width: 300px;
 
 }
 
@@ -39,22 +39,32 @@ require("../../CONSTANTS.php");
 
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border: 1px solid #ddd;
-  margin:2%;
-  padding-left: 0px;
-  padding-right: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,255,0.2);
+    transition: 0.3s;
+    border: 1px solid #ddd;
+    margin:2%;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 3px;
+    font-family: 'Roboto condensed';
 
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 8px 16px 0 rgba(0,0,255,0.4);
+  border-color: #acd;
 }
 
 .cardHeader{
-  background-color:#0077FF;
-  color: white;
-  font-family: 'Montserrat',sans-serif;
+  background-color:#FFFFFF;
+  color: #0077FF;
+  transition: 0.3s;
+  font-family: 'Roboto condensed',sans-serif;
   font-size: 27px;
+}
+
+.cardHeader:hover{
+  background-color:#0077FF;
+  color: #FFFFFF;
+
 }
