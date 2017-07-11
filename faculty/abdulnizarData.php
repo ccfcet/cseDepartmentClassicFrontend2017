@@ -13,13 +13,13 @@
   <h2 class="text-center">Dr Abdul Nizar</h2>
   </div>
 
-  <div class="row">
+  <div class="row no-margin">
     <div class="col-md-3 card" style="margin-left:5%; ">
     <div class="cardHeader">
     <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 30%;" >call</i>Contact</p>  
     </div>
           
-    <div class="row">
+    <div class="row no-margin">
     <div class=" col-md-3 col-xs-3">
     <p class="text-center"> Phone:</p>
     </div>        
@@ -28,7 +28,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-3 col-xs-3">
     <p class="text-center"> Email:</p>
     </div>       
@@ -37,7 +37,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-3 col-xs-3">
     <p class="text-center"> Office:</p> 
     </div>
@@ -52,7 +52,7 @@
     <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >school</i> Professional Qualifications</p>  
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> B-Tech:</p>
     </div>
@@ -61,7 +61,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> M-Tech:</p>
     </div>
@@ -70,7 +70,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> PhD</p>
     </div>
@@ -85,7 +85,7 @@
     <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >grade</i>Areas of Interest</p>  
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-3">
     <img src="animat-search-color.gif" height="50px">
     </div>
@@ -97,13 +97,13 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row no-margin">
     <div class="col-md-4 card">
     <div class="cardHeader">
     <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >grade</i>Professional Experience</p>  
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> 1990 - 1992</p>
     </div>
@@ -112,7 +112,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> </p>
     </div>
@@ -121,7 +121,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> </p>
     </div>
@@ -136,7 +136,7 @@
     <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >grade</i>Contributions in professional front</p>  
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p>  1996 – 1997</p>
     </div>
@@ -145,7 +145,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> 2003-2005</p>
     </div>
@@ -154,7 +154,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p>2003-2005</p>
     </div>
@@ -163,7 +163,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> November-December 2004</p>
     </div>
@@ -172,7 +172,7 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-2">
     <p> 2000 - 2001</p>
     </div>
@@ -185,14 +185,14 @@
   </div>
 
 
-  <div class="row">
+  <div class="row no-margin">
 
     <div class="col-md-11 card" >
     <div class="cardHeader">
     <p><i class="material-icons" style="font-size:20px;color:#0077FF;padding-left: 5%;" >grade</i>Publications</p>  
     </div>
     <!--TRY to IMPLEMENT THE BELOW THING WITH LISTS!!!!-->
-    <div class="row">
+    <div class="row no-margin">
     <div class="col-md-12" style="padding-left: 3%">    
     <p><i class="material-icons" style="font-size:10px;color:#0077FF;" >grade</i> Abdul Nizar M and P. Sreenivasa Kumar, Ordered Twig Query processing Over XML Streams, International Symposium on Data, Information and Knowledge Spectrum (ISDIKS 2007), Cochin, India.</p>
 

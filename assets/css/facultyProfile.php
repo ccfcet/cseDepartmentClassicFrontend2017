@@ -92,6 +92,7 @@ require("../../CONSTANTS.php");
   font-family: 'Roboto condensed';
 }
 
+/*
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,255,0.4);
   border-color: #acd;
@@ -103,10 +104,10 @@ require("../../CONSTANTS.php");
   color: #FFFFFF;
     
 }
-
+No absolute need for this */
 /*THIS PART WILL BE MODIFIED SOON ! DON'T WORRY*/
 
-.row{
+.no-margin{
   margin-top: 0px;
   margin-left:0px;
   margin-right: 0px;
