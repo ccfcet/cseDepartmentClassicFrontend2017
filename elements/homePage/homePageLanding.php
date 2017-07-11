@@ -5,7 +5,7 @@ Selection of random landing section is handled by this php script.
 */
 
 // Array of possible selections.
-$availableLandingSections=array(/*"motto1",*/"bitNight20171"/*,"bitNight20172"*/);
+$availableLandingSections=array("terminalWelcome","bitNight20171"/*,"bitNight20172"*/);
 
 // Length of array.
 $possibleSelectionsAvailable = count($availableLandingSection);

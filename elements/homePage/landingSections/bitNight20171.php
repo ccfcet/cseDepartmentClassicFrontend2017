@@ -1,4 +1,5 @@
-<script src="<?php echo SITE_SERVER_BASE ?>assets/js/sub/bitNight20171.js" async></script>
+<script src="<?php echo SITE_SERVER_BASE ?>assets/js/sub/addTransparency.js" async></script>
+<script src="<?php echo SITE_SERVER_BASE ?>assets/js/sub/bitNight20171.js" defer></script>
 <link rel="stylesheet" type="text/css" href="<?php echo SITE_SERVER_BASE ?>assets/css/sub/bitNight20171.php">
 <div id="bitNight20171" style="">
   <h1 id="landingDisplayText">
