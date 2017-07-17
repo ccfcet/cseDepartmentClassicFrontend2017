@@ -63,7 +63,7 @@ body
 #headingDepartmentText {
   /*font-family: 'Montserrat', sans-serif;*/
   margin-left: 79px;
-  top: 6px;
+  top: 5.5px;
   position: relative;
 }
 
@@ -83,7 +83,7 @@ body
 
 #headingCollegeText {
   margin-left: 80px;
-  top: 2px;
+  top: 1.5px;
   position: relative;
   margin-bottom: -1px;
   padding-bottom: 20px;
