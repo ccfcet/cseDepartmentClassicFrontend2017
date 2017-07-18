@@ -195,7 +195,12 @@ h4#menuTitle {
 .bigNumber{
   color:white;
   font-size: 70px;
-  border-left:1px solid white;
+  
+}
+
+#middle-no{
+ border-left:1px solid white;
+ border-right:1px solid white; 
 }
 
 
