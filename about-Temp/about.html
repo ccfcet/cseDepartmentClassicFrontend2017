@@ -95,6 +95,7 @@
   <h1>History</h1>
   <h2> "History will be kind to me; for I intend to write it"</h2>
   
+  <button id="btn-collapse">collapse</button>
   <!-- Responsive table starts here -->
   <!-- For correct display on small screens you must add 'data-title' to each 'td' in your table -->
   <div class="table-responsive-vertical shadow-z-1">
@@ -126,74 +127,77 @@
           <td data-title="Year">1991</td>
           
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">4</td>
           <td data-title="Name"> Intake increased to 60</td>
           <td data-title="Year">1993</td>
           
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">5</td>
           <td data-title="Name"> TAPTEC Funding for Multimedia and Communications Laboratories</td>
           <td data-title="Year">1994</td>
           
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">6</td>
           <td data-title="Name"> SSS-IMPACT Project of World Bank (for 5 years)</td>
           <td data-title="Year">1997</td>
           
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">7</td>
           <td data-title="Name"> Evening UG Course in Computer Science and Engineering</td>
           <td data-title="Year">1999</td>
           
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">8</td>
           <td data-title="Name"> MODROBS funding for Software Laboratory</td>
           <td data-title="Year">2000</td>
           
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">9</td>
           <td data-title="Name"> ISO 9001:2000 Certification; NBA Accreditation (A Grade for 5 years)</td>
           <td data-title="Year">2001</td>
           
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">10</td>
           <td data-title="Name"> Financial Autonomy for SSS-IMPACT </td>
           <td data-title="Year">2002</td>  
         </tr>
 
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">11</td>
           <td data-title="Name"> TEQIP Project for 5 years ; ISO Certification extended</td>
           <td data-title="Year">2004</td> 
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">12</td>
           <td data-title="Name"> NBA Accreditation for 3 years</td>
           <td data-title="Year">2007</td>  
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">13</td>
           <td data-title="Name"> Department relocated to own building</td>
           <td data-title="Year">2008</td>  
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">14</td>
           <td data-title="Name"> New M Tech programme in Computer Science & Engineering (intake : 18)</td>
           <td data-title="Year">2010</td>  
         </tr>
-        <tr>
+        <tr class="hidden-row">
           <td data-title="ID">15</td>
           <td data-title="Name"> MODROBS funding for Networking Lab.</td>
           <td data-title="Year">2011</td> 
         </tr>
-        <tr>
+        <tr class="etc-row">
+          <td >. . .</td>
+        </tr>
+        <tr >
           <td data-title="ID">16</td>
           <td data-title="Name"> New M Tech programme in Computer Science & Engineering with specialization in Information Security (intake : 18)</td>
           <td data-title="Year">2012</td>  
@@ -204,14 +208,14 @@
     </table>
   </div>
   
+  
   </div>
     <div class="tit">History</div>
     <div class="con">BTech programme in Computer Science and Engineering started in 1985 under the Department of Electrical Engineering. The Department of Computer Science and Engineering was formed in June 1997. The three-year MCA programme started in 1988. The two-year MTech programme in Computer Science and Engineering started in 1998. The two-year MTech programme in Computer Science and Engineering (Information Security) started in 2006. PhD programme started in 2002.</div>
     
   
 
-
-
+ 
 
 
 
@@ -221,7 +225,25 @@
   <!-- Latest compiled and minified JavaScript - Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <script src="js/common.js"></script>
+
+ <script type="text/javascript">
+
+    $(document).ready(function(){
+      $(".hidden-row").hide();
+      $(".etc-row").show();
+      $("#btn-collapse").hide();
+    $("#btn-collapse").click(function(){
+        $(".hidden-row").slideUp(100);
+        $(".etc-row").show();
+        $("#btn-collapse").slideUp(100);
+    });
+    $(".etc-row").click(function(){
+        $(".hidden-row").fadeIn(100);
+        $(".etc-row").fadeOut(100);
+        $("#btn-collapse").fadeIn();
+    });
+});
+  </script>
 
 </body>
 
