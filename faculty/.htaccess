@@ -1,4 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine On
-
-RewriteRule ^([a-zA-Z0-9-_]+)/?$ index.php?faculty=$1 [NC,L]
