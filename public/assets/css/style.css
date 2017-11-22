@@ -263,14 +263,14 @@ body
 }
 
 #mainMenu .mainMenuSubNested li {
-  background-color: #1984ff;
+  background-color: #0076FE;
   color: #fff;
   border-color: #006DE7;
   padding-left: 40px;
 }
 
 #mainMenu .mainMenuSubNested li:hover {
-  background-color: #3392ff;
+  background-color: #006DF5; //#3392ff;
   color: #FFF;
   border-color: #FFFFFF;
 }
