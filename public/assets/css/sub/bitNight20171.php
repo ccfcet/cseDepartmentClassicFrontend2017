@@ -99,20 +99,20 @@ require("../../../CONSTANTS.php");
   }
 
 
-    #landingDisplayText {
-      left: 8px;
-      top: 125px;
-    }
+  #landingDisplayText {
+    left: 8px;
+    top: 125px;
+  }
 
-    #landingDisplayTextSub {
-      left: 8px;
-      top: 181px;
-    }
+  #landingDisplayTextSub {
+    left: 8px;
+    top: 181px;
+  }
 
-    #landingDisplayButton {
-      left: 8px;
-      top: 252px;
-    }
+  #landingDisplayButton {
+    left: 8px;
+    top: 252px;
+  }
 
 }
 
@@ -158,6 +158,32 @@ require("../../../CONSTANTS.php");
   }
 }
 
+@media screen and (min-height: 320px) and (max-width: 320px) {
+  #bitNight20171 {
+    background-image: url('<?php echo SITE_SERVER_BASE ?>assets/images/homeLanding/bitNight20171.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #landingDisplayText {
+    left: 8px;
+    top: 110px;
+    font-size: 30px;
+  }
+
+  #landingDisplayTextSub {
+    left: 8px;
+    top: 155px;
+    font-size: 18px;
+  }
+
+  #landingDisplayButton {
+    left: 8px;
+    top: 213px;
+    font-size: 16px;
+  }
+}
+
 @media screen and (min-height: 300px) and (max-height: 320px) and (max-width: 320px) {
 
   #bitNight20171 {
@@ -187,28 +213,28 @@ require("../../../CONSTANTS.php");
 @media screen and (max-height: 300px)
 {
 
-    #bitNight20171 {
-      background-color: #3C3C3C;
-      background-image: none;
-    }
+  #bitNight20171 {
+    background-color: #3C3C3C;
+    background-image: none;
+  }
 
-    #landingDisplayText {
-      left: 41px;
-      top: 75px;
-      font-size: 28px;
-    }
+  #landingDisplayText {
+    left: 41px;
+    top: 75px;
+    font-size: 28px;
+  }
 
-    #landingDisplayTextSub {
-      left: 41px;
-      top: 116px;
-      font-size: 20px;
-    }
+  #landingDisplayTextSub {
+    left: 41px;
+    top: 116px;
+    font-size: 20px;
+  }
 
-    #landingDisplayButton {
-      left: 41px;
-      top: 174px;
-      font-size: 20px;
-    }
+  #landingDisplayButton {
+    left: 41px;
+    top: 174px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-height: 260px) and (min-width: 260px) and (max-height: 290px) and (max-width: 290px) {
@@ -237,9 +263,47 @@ require("../../../CONSTANTS.php");
   }
 }
 
+@media screen and (min-height: 1000px) and (min-width: 1600px) {
+  #bitNight20171 {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #landingDisplayText {
+    left: 98px;
+    top: 400px;
+  }
+
+  #landingDisplayTextSub {
+    left: 98px;
+    top: 456px;
+  }
+
+  #landingDisplayButton {
+    left: 98px;
+    top: 527px;
+  }
+}
+
+@media screen and (min-height: 400px) and (min-width: 900px) and (max-height: 599px) and (max-width: 1100px) {
+  #landingDisplayText {
+    left: 38px;
+    top: 205px;
+  }
+
+  #landingDisplayTextSub {
+    left: 38px;
+    top: 261px;
+  }
+
+  #landingDisplayButton {
+    left: 38px;
+    top: 332px;
+  }
+}
+
 @media screen and (min-height: 1920px) and (min-width: 1200px) {
   #bitNight20171 {
-    background-image: url('<?php echo SITE_SERVER_BASE ?>assets/images/homeLanding/bitNight20173.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
