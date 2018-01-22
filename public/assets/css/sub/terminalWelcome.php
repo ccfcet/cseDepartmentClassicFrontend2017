@@ -10,7 +10,7 @@ require("../../../CONSTANTS.php");
   src: url('<?php echo SITE_SERVER_BASE ?>assets/fonts/terminus-ttf-4.40.1/TerminusTTF-4.40.1.ttf') format("truetype");
 }
 
-body {
+body, #headerRow.transparent {
   background: #000000;
 }
 
@@ -23,6 +23,7 @@ body {
   background-color: #000000;
   color: rgba(255,255,255,0.8);
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  padding-right: 23px;
 }
 
 p#startlines {
@@ -66,7 +67,6 @@ See : https://codepen.io/alandunning/pen/RWRrEW */
   step-end = animation-timing-function,
   infinite = animation-iteration-count
   */
-
 }
 
 @-webkit-keyframes blink {

@@ -53,6 +53,10 @@ body
   position: fixed;
   width: 100%;
   z-index: 1;
+  transition-property: background;
+  transition-duration: 400ms;
+  -webkit-transition-property: background; /* Safari */
+  -webkit-transition-duration: 400ms; /* Safari */
 }
 
 #headerRow.transparent
@@ -96,11 +100,13 @@ body
 }
 
 #mainMenu {
-  display: none;
+  display: block;
+  margin-left: -250px;
   background-color: #0077FF;
   float: left;
   height: 100vh;
   position: fixed;
+  width: 250px;
 }
 
 #mainMenu a {
@@ -313,7 +319,7 @@ h4#menuTitle {
   height: 100%;
   width: 100%;
   top: 74px;
-  left: 250px;
+  /*left: 250px;*/
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
 }

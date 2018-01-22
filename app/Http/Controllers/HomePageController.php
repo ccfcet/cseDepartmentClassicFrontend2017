@@ -15,7 +15,7 @@ class HomePageController extends Controller
   public function load()
   {
     // Array of possible selections.
-    $availableLandingSections=array("terminalWelcome","bitNight20171"/*,"bitNight20172"*/);
+  $availableLandingSections=array("terminalWelcome"/*,"bitNight20171"/*,"bitNight20172"*/);
 
     // Length of array.
     $possibleSelectionsAvailable = count($availableLandingSections);

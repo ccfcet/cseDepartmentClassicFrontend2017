@@ -70,74 +70,46 @@ function toggleMenuNestedList(x) {
   // console.log(string);
 }
 
-// function actionNav(element) {
-//   if ($(".actionNavOverride")[0]){
-//     // Override of values present.
-//     actionNavOverride(element,$(".actionNavOverride").attr('data-extraMarginLeftProvided'));
-// }
-// else {
-//   actionNavSelf(element);
-// }
-// }
-
 function actionNavSelf(element) {
   if (element.classList.contains('change'))
   {
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-    document.getElementById("mainMenu").style.width = "250px";
-    document.getElementById("mainMenu").style.display = "block";
-    document.getElementById("mainContent").style.marginLeft = "250px";
-    document.getElementById("mainContent").style.marginRight = "-250px";
-    document.getElementById("mainMenuButton").style.marginLeft = "194px";
-    document.getElementById("headingDepartmentText").style.marginLeft = "20px";
-    document.getElementById("headingCollegeText").style.marginLeft = "21px";
+    $("#mainMenu").animate({marginLeft: '0px'});
+    $("#mainContent").animate({marginLeft: '250px', marginRight: '-250px'});
+    $("#mainMenuButton").animate({marginLeft: '194px'});
+    $("#headingDepartmentText").animate({marginLeft: '20px'});
+    $("#headingCollegeText").animate({marginLeft: '21px'});
+    $("#mainContentOverlay").animate({left: '250px'});
     document.getElementById("mainContentOverlay").style.display = "block";
+    // document.getElementById("mainMenu").style.width = "250px";
+    // document.getElementById("mainContent").style.marginLeft = "250px";
+    // document.getElementById("mainContent").style.marginRight = "-250px";
+    // document.getElementById("mainMenuButton").style.marginLeft = "194px";
+    // document.getElementById("headingDepartmentText").style.marginLeft = "20px";
+    // document.getElementById("headingCollegeText").style.marginLeft = "21px";
   }
   else
   {
-    document.getElementById("mainMenu").style.width = "0";
-    document.getElementById("mainMenu").style.display = "none";
-    document.getElementById("mainContent").style.marginLeft = "0";
-    document.getElementById("mainContent").style.marginRight = "0";
-    document.getElementById("mainMenuButton").style.marginLeft = "22px";
-    document.getElementById("headingDepartmentText").style.marginLeft = "79px";
-    document.getElementById("headingCollegeText").style.marginLeft = "80px";
+    $("#mainMenu").animate({marginLeft: '-250px'});
+    $("#mainContent").animate({marginLeft: '0px', marginRight: '0px'});
+    $("#mainMenuButton").animate({marginLeft: '22px'});
+    $("#headingDepartmentText").animate({marginLeft: '79px'});
+    $("#headingCollegeText").animate({marginLeft: '80px'});
+    $("#mainContentOverlay").animate({left: '0px'});
     document.getElementById("mainContentOverlay").style.display = "none";
+    // document.getElementById("mainMenu").style.width = "0";
+    // document.getElementById("mainMenu").style.display = "none";
+    // document.getElementById("mainContent").style.marginLeft = "0";
+    // document.getElementById("mainContent").style.marginRight = "0";
+    // document.getElementById("mainMenuButton").style.marginLeft = "22px";
+    // document.getElementById("headingDepartmentText").style.marginLeft = "79px";
+    // document.getElementById("headingCollegeText").style.marginLeft = "80px";
+    // document.getElementById("mainContentOverlay").style.display = "none";
   }
 }
 
-// function actionNavOverride(element, extraMarginLeftProvided) {
-//   if (element.classList.contains('change'))
-//   {
-//     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-//     document.getElementById("mainMenu").style.width = "250px";
-//     document.getElementById("mainMenu").style.display = "block";
-//     document.getElementById("mainContent").style.marginLeft = "250px";
-//     document.getElementById("mainContent").style.marginRight = "-250px";
-//     document.getElementById("mainMenuButton").style.marginLeft = "194px";
-//     document.getElementById("headingDepartmentText").style.marginLeft = "20px";
-//     document.getElementById("headingCollegeText").style.marginLeft = "21px";
-//     document.getElementById("mainContentOverlay").style.display = "block";
-//   }
-//   else
-//   {
-//     document.getElementById("mainMenu").style.width = "0";
-//     document.getElementById("mainMenu").style.display = "none";
-//     document.getElementById("mainContent").style.marginLeft = "0";
-//     document.getElementById("mainContent").style.marginRight = "0";
-//     var windowWidth = $(window).width();
-//     var windowWidthUnit = parseInt(windowWidth/100)+"px";
-//     var extraMarginLeftToBeProvided = (parseInt(extraMarginLeftProvided.replace(/vw/,""))*parseInt(windowWidthUnit.replace(/px/,"")))+"px";
-//     document.getElementById("mainMenuButton").style.marginLeft = (parseInt(extraMarginLeftToBeProvided.replace(/px/,""))+parseInt("22px".replace(/px/,"")))+"px";
-//     document.getElementById("headingDepartmentText").style.marginLeft = (parseInt(extraMarginLeftToBeProvided.replace(/px/,""))+parseInt("79px".replace(/px/,"")))+"px";
-//     document.getElementById("headingCollegeText").style.marginLeft = (parseInt(extraMarginLeftToBeProvided.replace(/px/,""))+parseInt("80px".replace(/px/,"")))+"px";;
-//     document.getElementById("mainContentOverlay").style.display = "none";
-//   }
-// }
-
 function actionHeader()
 {
-
   if (document.getElementById("headerRow").classList.contains('transparent'))
   {
     document.getElementById("headerRow").classList.remove("transparent");
@@ -153,7 +125,6 @@ function actionHeader()
 
 function actionBars()
 {
-
   if (document.getElementById("headerRow").classList.contains('transparent'))
   {
     var searchEles = document.getElementById("mainMenuButton").children;
@@ -176,5 +147,4 @@ function actionBars()
         }
     }
   }
-
 }

@@ -3,9 +3,12 @@
 <head>
 
   <meta charset="utf-8">
-
-  <title>Department of Computer Science, CET</title>
-  <meta name="description" content="Official website of Department of Computer Science, College of Engineering Trivandrum.">
+  @if(View::hasSection('title'))
+<title>@yield('title') - Department of Computer Science, CET</title>
+  @else
+<title>Department of Computer Science, CET</title>
+  @endif
+<meta name="description" content="Official website of Department of Computer Science, College of Engineering Trivandrum.">
   <meta name="author" content="Web Team, CCF CET">
 
   <meta property="og:title" content="Department of Computer Science, CET" />
@@ -33,7 +36,7 @@
     <div class="bar3"></div>
   </div>
 
-  <div id="mainMenu">
+  <div id="mainMenu" class="transparent">
     <div id="menuTitleContainer">
       <h4 id="menuTitle">Menu</h4>
     </div>
