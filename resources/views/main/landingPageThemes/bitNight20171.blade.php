@@ -8,7 +8,7 @@
     Live your passion.
   </h1>
   <h3 id="landingDisplayTextSub">
-    Campus life, redifined.
+    Campus life, redefined.
   </h3>
   <a id="landingDisplayButton" class="btn btn-lg btn-default">Explore.</a>
   <div class="actionNavOverride" data-extraMarginLeftProvided="6vw"></div>
