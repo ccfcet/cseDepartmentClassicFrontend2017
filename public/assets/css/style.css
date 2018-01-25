@@ -5,6 +5,11 @@ body
   overflow-x: hidden;
 }
 
+.noPadding
+{
+  padding: 0px;
+}
+
 .menuButtonContainer
 {
   display: inline-block;
@@ -100,13 +105,13 @@ body
 }
 
 #mainMenu {
-  display: block;
   margin-left: -250px;
   background-color: #0077FF;
   float: left;
   height: 100vh;
   position: fixed;
   width: 250px;
+  display: block;
 }
 
 #mainMenu a {

@@ -4,35 +4,35 @@ var text = '';
 var inputText = '';
 
 function checkForYes() {
-setTimeout(function () {
-  inputText = document.getElementById('terminalInput').value;
-  inputText = inputText.toLowerCase();
-  if(inputText ==  "yes")
-  {
-    // alert(inputText); // Debug code.
-    window.location.href = window.location.href+"about";
-  }
-  checkForYes();
-}, 3000);
+  setTimeout(function () {
+    inputText = document.getElementById('terminalInput').value;
+    inputText = inputText.toLowerCase();
+    if(inputText ==  "yes")
+    {
+      // alert(inputText); // Debug code.
+      window.location.href = window.location.href+"about";
+    }
+    checkForYes();
+  }, 3000);
 }
 
 function loopLi() {
-setTimeout(function () {
-        text += lines.charAt(i);
-        i=i+1;
-        document.getElementById("welcomelines").innerHTML = text;
-        if( i < lines.length ) {
-          loopLi();
-        }
-        else {
-          // document.getElementById("terminalcursor").style.WebkitAnimation = "blink 1s step-end infinite";
-          // document.getElementById("terminalcursor").style.animation= "blink 1s step-end infinite";
-          document.getElementById("terminalcursor").style.display= "none";
-          document.getElementById("terminalInput").style.display= "block";
-          document.getElementById("terminalInput").focus();
-          checkForYes();
-        }
-}, 40);
+  setTimeout(function () {
+    text += lines.charAt(i);
+    i=i+1;
+    document.getElementById("welcomelines").innerHTML = text;
+    if( i < lines.length ) {
+      loopLi();
+    }
+    else {
+      // document.getElementById("terminalcursor").style.WebkitAnimation = "blink 1s step-end infinite";
+      // document.getElementById("terminalcursor").style.animation= "blink 1s step-end infinite";
+      document.getElementById("terminalcursor").style.display= "none";
+      document.getElementById("terminalInput").style.display= "block";
+      document.getElementById("terminalInput").focus();
+      checkForYes();
+    }
+  }, 40);
 }
 
 loopLi();
@@ -48,4 +48,3 @@ $("html").click(function(){
     document.getElementById("terminalInput").focus();
   }
 });
-
