@@ -30,17 +30,7 @@ $(window).on("resize", function () {
 
 /* For menu */
 
-function menuToggle(x){
-  menuButtonToggle(x);
-  actionNavSelf(x);
-  actionHeader();
-}
-
-function menuButtonToggle(x) {
-  x.classList.toggle("change");
-}
-
-/* For accodion menu action */
+/* For accordion menu action */
 
 function closeAllLists() {
 
@@ -68,6 +58,16 @@ function toggleMenuNestedList(x) {
   }
   x.classList.toggle("change");
   // console.log(string);
+}
+
+function menuToggle(x){
+  menuButtonToggle(x);
+  actionNavSelf(x);
+  actionHeader();
+}
+
+function menuButtonToggle(x) {
+  x.classList.toggle("change");
 }
 
 function actionNavSelf(element) {
@@ -147,4 +147,63 @@ function actionBars()
         }
     }
   }
+}
+
+// for mainSearch
+
+function actionSearchIcon()
+{
+}
+
+function actionMainSearch()
+{
+  if(document.getElementById("mainSearchContainer").classList.contains("change"))
+  {
+    $("#mainSearchContainer").animate({right: '-100vw'});
+    $("#mainContent").animate({marginLeft: '0px', marginRight: '0px'});
+    document.getElementById("mainContentOverlay").style.display = "none";
+    $("#mainMenuButton").animate({marginLeft: '22px'});
+    document.getElementById("mainSearchButton").style.position = "static";
+
+    $("#mainSearchButton").animate({right: '0px', top: '37px'});
+    $("#mainContentOverlay").animate({left: '0px'});
+  }
+  else
+  {
+    $("#mainSearchContainer").animate({right: '0px'});
+    $("#mainContent").animate({marginLeft: '-100vw', marginRight: '100vw'});
+    document.getElementById("mainContentOverlay").style.display = "block";
+    $("#mainContentOverlay").animate({left: '-100vw'});
+
+    // get window width
+    var windowWidth = $(window).width();
+
+    // calculate mainMenuButtonMarginLeft
+    var mainMenuButtonMarginLeft = (parseInt(windowWidth) - 53)+"px";
+
+    $("#mainMenuButton").animate({marginLeft: mainMenuButtonMarginLeft});
+
+    document.getElementById("mainSearchButton").style.position = "fixed";
+
+    $("#mainSearchButton").animate({right: '10vw', top: '40vh'});
+    // $("#mainSearchButton").animate({marginLeft: });
+  }
+  document.getElementById("mainSearchContainer").classList.toggle("change");
+}
+
+function searchToggle()
+{
+  if(document.getElementById("mainSearchButton").classList.contains('change'))
+  {
+    $("#mainMenuButton").attr("onclick","menuToggle(this);");
+  }
+  else
+  {
+    $("#mainMenuButton").attr("onclick","searchToggle();");
+  }
+  document.getElementById("mainSearchButton").classList.toggle("change");
+  menuButtonToggle(document.getElementById("mainMenuButton"));
+  actionHeader();
+  actionSearchIcon();
+  actionMainSearch();
 }

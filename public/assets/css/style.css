@@ -341,3 +341,24 @@ ul.mainMenuNested, ul.mainMenuSubNested {
   z-index: 0;
   top: 74px;
 }
+
+#mainSearchContainer {
+  right: -100vw;
+  background-color: #0077FF;
+  float: right;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  display: block;
+  z-index: -1;
+}
+
+.mainSearchButtonContainer
+{
+  display: block;
+  cursor: pointer;
+  position: static;
+  right: 0px;
+  top: 37px;
+  z-index: 1;
+}

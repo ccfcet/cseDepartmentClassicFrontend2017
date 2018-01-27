@@ -19,8 +19,11 @@
       @yield("homeBody","code is poetry")
     </div>
   </div>
+  {{-- include search --}}
+  @include('common.layouts.elements.search')
+
   {{-- include common scripts --}}
   @include('common.layouts.elements.scripts')
-  
+
 </body>
 </html>
