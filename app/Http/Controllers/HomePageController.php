@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Http\Controllers\Controller;
 
+require_once("../CONSTANTS.php");
+
+use GuzzleHttp\Client;
+
 class HomePageController extends Controller
 {
   /**
@@ -14,6 +18,8 @@ class HomePageController extends Controller
   */
   public function load()
   {
+    $client = new Client(); //GuzzleHttp\Client
+
     // Array of possible selections.
   $availableLandingSections=array("terminalWelcome", "bitNight20171"/*,"bitNight20172"*/);
 

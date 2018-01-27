@@ -26,6 +26,10 @@ $(window).on("resize", function () {
   }
 }).resize();
 
+$(window).load(function() {
+  resize();
+});
+
 /* uses jquery -- end */
 
 /* For menu */
@@ -159,6 +163,8 @@ function actionMainSearch()
     $("#mainContent").animate({marginLeft: '0px', marginRight: '0px'});
     document.getElementById("mainContentOverlay").style.display = "none";
     $("#mainContentOverlay").animate({left: '0px'});
+
+    $("#mainSearchInput").focusout();
   }
   else
   {

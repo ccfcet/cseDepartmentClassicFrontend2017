@@ -29,7 +29,14 @@ function loopLi() {
       // document.getElementById("terminalcursor").style.animation= "blink 1s step-end infinite";
       document.getElementById("terminalcursor").style.display= "none";
       document.getElementById("terminalInput").style.display= "block";
-      document.getElementById("terminalInput").focus();
+      if(document.getElementById("mainMenuButton").classList.contains('change') || document.getElementById("mainSearchContainer").classList.contains('change'))
+      {
+        //do nothing
+      }
+      else
+      {
+        document.getElementById("terminalInput").focus();
+      }
       checkForYes();
     }
   }, 40);
