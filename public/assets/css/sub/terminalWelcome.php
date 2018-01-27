@@ -46,6 +46,7 @@ input#terminalInput {
   border: none;
   font-family: Terminus;
   font-size: 18px;
+  outline: none;
 }
 
 /* CSS Blinking cursor / Mac terminal

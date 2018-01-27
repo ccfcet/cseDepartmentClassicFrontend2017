@@ -406,4 +406,5 @@ ul.mainMenuNested, ul.mainMenuSubNested {
   font-size: 48px;
   /*width: -moz-available;*/
   width: 100%;
+  outline: none;
 }
