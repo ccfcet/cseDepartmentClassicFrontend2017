@@ -151,10 +151,6 @@ function actionBars()
 
 // for mainSearch
 
-function actionSearchIcon()
-{
-}
-
 function actionMainSearch()
 {
   if(document.getElementById("mainSearchContainer").classList.contains("change"))
@@ -162,10 +158,6 @@ function actionMainSearch()
     $("#mainSearchContainer").animate({right: '-100vw'});
     $("#mainContent").animate({marginLeft: '0px', marginRight: '0px'});
     document.getElementById("mainContentOverlay").style.display = "none";
-    $("#mainMenuButton").animate({marginLeft: '22px'});
-    document.getElementById("mainSearchButton").style.position = "static";
-
-    $("#mainSearchButton").animate({right: '0px', top: '37px'});
     $("#mainContentOverlay").animate({left: '0px'});
   }
   else
@@ -174,19 +166,6 @@ function actionMainSearch()
     $("#mainContent").animate({marginLeft: '-100vw', marginRight: '100vw'});
     document.getElementById("mainContentOverlay").style.display = "block";
     $("#mainContentOverlay").animate({left: '-100vw'});
-
-    // get window width
-    var windowWidth = $(window).width();
-
-    // calculate mainMenuButtonMarginLeft
-    var mainMenuButtonMarginLeft = (parseInt(windowWidth) - 53)+"px";
-
-    $("#mainMenuButton").animate({marginLeft: mainMenuButtonMarginLeft});
-
-    document.getElementById("mainSearchButton").style.position = "fixed";
-
-    $("#mainSearchButton").animate({right: '10vw', top: '40vh'});
-    // $("#mainSearchButton").animate({marginLeft: });
   }
   document.getElementById("mainSearchContainer").classList.toggle("change");
 }
@@ -195,15 +174,20 @@ function searchToggle()
 {
   if(document.getElementById("mainSearchButton").classList.contains('change'))
   {
-    $("#mainMenuButton").attr("onclick","menuToggle(this);");
+    // $("#mainMenuButton").attr("onclick","menuToggle(this);");
+    //
+    // $("#mainMenuButton").animate({marginLeft: '+=1'});
+    $("#mainMenuButton").animate({left: '0px'});
   }
   else
   {
-    $("#mainMenuButton").attr("onclick","searchToggle();");
+    // $("#mainMenuButton").attr("onclick","searchToggle();");
+    //
+    // $("#mainMenuButton").animate({marginLeft: '-=1'});
+    $("#mainMenuButton").animate({left: '-100vw'});
   }
   document.getElementById("mainSearchButton").classList.toggle("change");
-  menuButtonToggle(document.getElementById("mainMenuButton"));
+  // menuButtonToggle(document.getElementById("mainMenuButton"));
   actionHeader();
-  actionSearchIcon();
   actionMainSearch();
 }
