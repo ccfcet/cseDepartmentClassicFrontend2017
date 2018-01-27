@@ -166,13 +166,15 @@ function actionMainSearch()
     $("#mainContent").animate({marginLeft: '-100vw', marginRight: '100vw'});
     document.getElementById("mainContentOverlay").style.display = "block";
     $("#mainContentOverlay").animate({left: '-100vw'});
+
+    $("#mainSearchInput").focus();
   }
   document.getElementById("mainSearchContainer").classList.toggle("change");
 }
 
 function searchToggle()
 {
-  if(document.getElementById("mainSearchButton").classList.contains('change'))
+  if(document.getElementById("mainSearchOpenButton").classList.contains('change'))
   {
     // $("#mainMenuButton").attr("onclick","menuToggle(this);");
     //
@@ -186,7 +188,7 @@ function searchToggle()
     // $("#mainMenuButton").animate({marginLeft: '-=1'});
     $("#mainMenuButton").animate({left: '-100vw'});
   }
-  document.getElementById("mainSearchButton").classList.toggle("change");
+  document.getElementById("mainSearchOpenButton").classList.toggle("change");
   // menuButtonToggle(document.getElementById("mainMenuButton"));
   actionHeader();
   actionMainSearch();

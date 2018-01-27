@@ -39,7 +39,7 @@ loopLi();
 
 // code to enable input like a terminal
 $("html").click(function(){
-  if (document.getElementById("mainMenuButton").classList.contains('change'))
+  if(document.getElementById("mainMenuButton").classList.contains('change') || document.getElementById("mainSearchContainer").classList.contains('change'))
   {
     //do nothing
   }

@@ -354,12 +354,55 @@ ul.mainMenuNested, ul.mainMenuSubNested {
   z-index: -1;
 }
 
-.mainSearchButtonContainer
+.mainSearchOpenButtonContainer
 {
-  display: block;
   cursor: pointer;
-  position: static;
-  right: 0px;
-  top: 37px;
+}
+
+.mainSearchCloseButtonContainer
+{
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 19px;
+  margin-left: 19px;
   z-index: 1;
+}
+
+.mainSearchCloseButtonContainer .bar1
+{
+  -webkit-transform: rotate(-45deg) translate(-7px, 7px) ;
+  transform: rotate(-45deg) translate(-7px, 7px) ;
+}
+
+.mainSearchCloseButtonContainer .bar2
+{
+  opacity: 0;
+}
+
+.mainSearchCloseButtonContainer .bar3
+{
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#mainSearchInputColumn
+{
+  background: rgb(255, 255, 255);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#mainSearchInput
+{
+  /*color: rgba(255,255,255,0.8);*/
+  color: #0077ff;
+  /*background: transparent;*/
+  background: rgb(255, 255, 255);
+  border: none;
+  font-size: 48px;
+  width: -moz-available;
 }
