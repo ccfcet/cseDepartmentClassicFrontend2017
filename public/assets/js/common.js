@@ -68,7 +68,7 @@ function toggleMenuNestedList(x) {
   var string = "ul#"+x.id.replace("Button","");
   // console.log(string);
   // uses jquery
-  var display = $(string).css("display");
+  var display = $(string.replace("/", "\\/")).css("display");
   string = string.replace("ul#","");
   var string2 = "glyphicon"+string.replace("NestedList","");
   // console.log(string2);
