@@ -157,7 +157,8 @@ body
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 1px;
-  border-color: #07F;
+  /*border-color: #07F;*/
+  border-color: #DBDBDB;
   padding-bottom: 7px;
 }
 

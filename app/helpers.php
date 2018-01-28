@@ -1,11 +1,11 @@
 <?php
 
-require_once("../CONSTANTS.php");
-
 use GuzzleHttp\Client;
 
 function getMenuData()
 {
+  require_once("../CONSTANTS.php");
+
   $client = new Client(); //GuzzleHttp\Client
 
   $result_1 = $client->request('GET', API_SERVER_BASE.'public/menu/cse/1');

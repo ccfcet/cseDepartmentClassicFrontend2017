@@ -12,36 +12,56 @@ if(!empty($menuData) && !empty($menuData[0]))
       <h4 id="menuTitle">Menu</h4>
     </div>
     <div id="menuItemsContainer">
-      <ul>
-        <li id="AboutNestedListButton" onclick="toggleMenuNestedList(this)"><a href="#">About</a><span id="glyphiconAbout" class="glyphicon glyphicon-chevron-down"></span>
-          <ul id="AboutNestedList" class="mainMenuNested">
-            <li onclick="location.href='#';"><a href="#">Leadership and Administration</a></li>
-            <!-- <li><a href="#">Initiatives</a></li> -->
-            <!-- <li><a href="#">News, Publications, and Facts</a></li> -->
-            <!-- <li><a href="#">Careers</a></li> -->
-            <li onclick="location.href='#';"><a href="#">Visitor Information</a></li>
-            <!-- <li><a href="#">Giving to the Department</a></li> -->
-          </ul>
-        </li>
-        <li id="AdmissionsNestedListButton" onclick="toggleMenuNestedList(this)"><a href="#">Admissions</a><span id="glyphiconAdmissions" class="glyphicon glyphicon-chevron-down"></span></li>
-        <ul id="AdmissionsNestedList" class="mainMenuNested">
-          <li onclick="location.href='#';"><a href="#">Undergraduate Admissions</a></li>
-          <li onclick="location.href='#';"><a href="#">Graduate Admissions</a></li>
-          <!-- <li onclick="location.href='#';"><a href="#">Financial Aid and Scholarships</a></li> -->
-        </ul>
-        <li id="AcademicsNestedListButton" onclick="toggleMenuNestedList(this)"><a href="#">Academics</a><span id="glyphiconAcademics" class="glyphicon glyphicon-chevron-down"></span></li>
-        <ul id="AcademicsNestedList" class="mainMenuNested">
-          <li onclick="location.href='#';"><a href="#">Academic Programs</a></li>
-          <li onclick="location.href='#';"><a href="#">Faculties</a></li>
-          <li onclick="location.href='#';"><a href="#">Awards and Highlights</a></li>
-          <li onclick="location.href='#';"><a href="#">Facilities</a></li>
-          <li onclick="location.href='#';"><a href="#">Library</a></li>
-          <li onclick="location.href='#';"><a href="#">Academic Resources</a></li>
-        </ul>
-        <li onclick="location.href='#';"><a href="#">Campus Life</a></li>
-        <li onclick="location.href='#';"><a href="#">Research</a></li>
-      </ul>
       <?php
+      if(!empty($menuData[0]))
+      {
+        ?>
+        <ul>
+          <?php
+          foreach ($menuData[0] as $menuElement)
+          {
+            ?>
+            <li id="<?php echo $menuElement->itemUrl;?>NestedListButton" onclick="toggleMenuNestedList(this)"><a id="<?php echo $menuElement->itemUrl;?>_a" href="<?php echo $menuElement->itemUrl;?>"><?php echo $menuElement->itemName;?></a>
+              <script>
+              window.addEventListener('DOMContentLoaded', function() {
+                $(document).ready(function(){
+                  $("#<?php echo $menuElement->itemUrl;?>_a").click(function(event){
+                    event.stopPropagation();
+                  });
+                });
+              });
+              </script>
+              <?php
+              if(!empty($menuElement->children))
+              {
+                ?>
+                <span id="glyphicon<?php echo $menuElement->itemUrl;?>" class="glyphicon glyphicon-chevron-down"></span>
+                <?php
+              }
+              ?>
+            </li>
+            <?php
+            if(!empty($menuElement->children))
+            {
+              ?>
+              <ul id="<?php echo $menuElement->itemUrl;?>NestedList" class="mainMenuNested">
+                <?php
+                // print children li one by one
+                foreach ($menuElement->children as $childElement)
+                {
+                  ?>
+                  <li onclick="location.href='<?php echo $childElement->itemUrl;?>';"><a href="<?php echo $childElement->itemUrl;?>"><?php echo $childElement->itemName;?></a></li>
+                  <?php
+                }
+                ?>
+              </ul>
+              <?php
+            }
+          }
+          ?>
+        </ul>
+        <?php
+      }
       if(!empty($menuData[1]))
       {
         ?>

@@ -27,7 +27,8 @@ $(window).on("resize", function () {
 }).resize();
 
 $(window).load(function() {
-  resize();
+  // resize();
+  $(window).trigger('resize');
 });
 
 /* uses jquery -- end */
@@ -40,13 +41,29 @@ function closeAllLists() {
 
 }
 
+function stopClickEventPropogation(e)
+{
+  if (!e)
+  e = window.event;
+
+  //IE9 & Other Browsers
+  if (e.stopPropagation) {
+    e.stopPropagation();
+  }
+  //IE8 and Lower
+  else {
+    e.cancelBubble = true;
+  }
+}
+
 function toggleMenuNestedList(x) {
   var string = "ul#"+x.id.replace("Button","");
-  // console.log(x.id);
+  // console.log(string);
   // uses jquery
   var display = $(string).css("display");
   string = string.replace("ul#","");
   var string2 = "glyphicon"+string.replace("NestedList","");
+  // console.log(string2);
   if(display == "none")
   {
     closeAllLists();
@@ -134,21 +151,21 @@ function actionBars()
     var searchEles = document.getElementById("mainMenuButton").children;
     for(var i = 0; i < searchEles.length; i++)
     {
-        if(searchEles[i].tagName == 'DIV')
-        {
-          searchEles[i].classList.remove("transparent-revoked");
-          searchEles[i].classList.add("transparent");
-        }
+      if(searchEles[i].tagName == 'DIV')
+      {
+        searchEles[i].classList.remove("transparent-revoked");
+        searchEles[i].classList.add("transparent");
+      }
     }
   }
   else if (document.getElementById("headerRow").classList.contains('transparent-revoked'))
   {
     var searchEles = document.getElementById("mainMenuButton").children;
     for(var i = 0; i < searchEles.length; i++) {
-        if(searchEles[i].tagName == 'DIV') {
-          searchEles[i].classList.remove("transparent");
-          searchEles[i].classList.add("transparent-revoked");
-        }
+      if(searchEles[i].tagName == 'DIV') {
+        searchEles[i].classList.remove("transparent");
+        searchEles[i].classList.add("transparent-revoked");
+      }
     }
   }
 }
