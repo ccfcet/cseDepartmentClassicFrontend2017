@@ -13,7 +13,7 @@ function checkForYes() {
       window.location.href = window.location.href+"about";
     }
     checkForYes();
-  }, 3000);
+  }, 400);
 }
 
 function loopLi() {
@@ -42,7 +42,9 @@ function loopLi() {
   }, 40);
 }
 
-loopLi();
+$("div#content").load(function(){
+  loopLi();
+});
 
 // code to enable input like a terminal
 $("html").click(function(){

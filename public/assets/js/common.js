@@ -27,8 +27,16 @@ $(window).on("resize", function () {
 }).resize();
 
 $(window).load(function() {
-  // resize();
+
   $(window).trigger('resize');
+
+  document.getElementById("content").style.visibility = "visible";
+
+  // fadeOut loader
+  $("#loaderOuterContainer").fadeOut(1000, function(){
+    // fadeOut complete
+    $( "div#content" ).trigger( "load" );
+  });
 });
 
 /* uses jquery -- end */
