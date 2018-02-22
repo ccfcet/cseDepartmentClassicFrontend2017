@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomePageController@load');
+
+Route::get('/academics/faculties/', 'FacultyController@main');

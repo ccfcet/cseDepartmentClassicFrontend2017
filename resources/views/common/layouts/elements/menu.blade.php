@@ -24,7 +24,7 @@ if(!empty($menuData) && !empty($menuData[0]))
             {
               // children present
               ?>
-              <li id="<?php echo $menuElement->itemUrl;?>NestedListButton" onclick="toggleMenuNestedList(this)"><a id="<?php echo $menuElement->itemUrl;?>_a" href="<?php echo $menuElement->itemUrl;?>"><?php echo $menuElement->itemName;?></a>
+              <li id="<?php echo $menuElement->itemUrl;?>NestedListButton" onclick="toggleMenuNestedList(this)"><a id="<?php echo url('/').'/'.$menuElement->itemUrl;?>_a" href="<?php echo url('/').'/'.$menuElement->itemUrl;?>"><?php echo $menuElement->itemName;?></a>
                 <script>
                 window.addEventListener('DOMContentLoaded', function() {
                   $(document).ready(function(){
@@ -42,7 +42,7 @@ if(!empty($menuData) && !empty($menuData[0]))
                 foreach ($menuElement->children as $childElement)
                 {
                   ?>
-                  <li onclick="location.href='<?php echo $childElement->itemUrl;?>';"><a href="<?php echo $childElement->itemUrl;?>"><?php echo $childElement->itemName;?></a></li>
+                  <li onclick="location.href='<?php echo url('/').'/'.$childElement->itemUrl;?>';"><a href="<?php echo url('/').'/'.$childElement->itemUrl;?>"><?php echo $childElement->itemName;?></a></li>
                   <?php
                 }
                 ?>
@@ -53,7 +53,7 @@ if(!empty($menuData) && !empty($menuData[0]))
             {
               // children not present
               ?>
-              <li onclick="location.href='<?php echo $menuElement->itemUrl;?>';"><a href="<?php echo $menuElement->itemUrl;?>"><?php echo $menuElement->itemName;?></a></li>
+              <li onclick="location.href='<?php echo url('/').'/'.$menuElement->itemUrl;?>';"><a href="<?php echo url('/').'/'.$menuElement->itemUrl;?>"><?php echo $menuElement->itemName;?></a></li>
               <?php
             }
           }
@@ -81,14 +81,14 @@ if(!empty($menuData) && !empty($menuData[0]))
                 {
                   // first li
                   ?>
-                  <li id="<?php echo $menuElement->itemUrl; ?>NestedListButton" class="mainMenuSubFirstItem" onclick="toggleMenuNestedList(this)"><a href="<?php echo $menuElement->itemUrl; ?>"><?php echo $menuElement->itemName; ?></a><span id="glyphicon<?php echo $menuElement->itemUrl; ?>" class="glyphicon glyphicon-chevron-down"></span></li>
+                  <li id="<?php echo $menuElement->itemUrl; ?>NestedListButton" class="mainMenuSubFirstItem" onclick="toggleMenuNestedList(this)"><a href="<?php echo url('/').'/'.$menuElement->itemUrl; ?>"><?php echo $menuElement->itemName; ?></a><span id="glyphicon<?php echo $menuElement->itemUrl; ?>" class="glyphicon glyphicon-chevron-down"></span></li>
                   <?php
                 }
                 else
                 {
                   // not first li
                   ?>
-                  <li id="<?php echo $menuElement->itemUrl; ?>NestedListButton" onclick="toggleMenuNestedList(this)"><a href="<?php echo $menuElement->itemUrl; ?>"><?php echo $menuElement->itemName; ?></a><span id="glyphicon<?php echo $menuElement->itemUrl; ?>" class="glyphicon glyphicon-chevron-down"></span></li>
+                  <li id="<?php echo $menuElement->itemUrl; ?>NestedListButton" onclick="toggleMenuNestedList(this)"><a href="<?php echo url('/').'/'.$menuElement->itemUrl; ?>"><?php echo $menuElement->itemName; ?></a><span id="glyphicon<?php echo $menuElement->itemUrl; ?>" class="glyphicon glyphicon-chevron-down"></span></li>
                   <?php
                 }
                 ?>
@@ -97,7 +97,7 @@ if(!empty($menuData) && !empty($menuData[0]))
                   foreach ($menuElement->children as $childElement)
                   {
                     ?>
-                    <li onclick="location.href='<?php echo $childElement->itemUrl; ?>';"><a href="<?php echo $childElement->itemUrl; ?>"><?php echo $childElement->itemName; ?></a></li>
+                    <li onclick="location.href='<?php echo url('/').'/'.$childElement->itemUrl; ?>';"><a href="<?php echo url('/').'/'.$childElement->itemUrl; ?>"><?php echo $childElement->itemName; ?></a></li>
                     <?php
                   }
                   ?>
@@ -111,14 +111,14 @@ if(!empty($menuData) && !empty($menuData[0]))
                 {
                   // first li
                   ?>
-                  <li onclick="location.href='<?php echo $menuElement->itemUrl; ?>';" class="mainMenuSubFirstItem"><a href="<?php echo $menuElement->itemUrl; ?>"><?php echo $menuElement->itemName; ?></a></li>
+                  <li onclick="location.href='<?php echo url('/').'/'.$menuElement->itemUrl; ?>';" class="mainMenuSubFirstItem"><a href="<?php echo url('/').'/'.$menuElement->itemUrl; ?>"><?php echo $menuElement->itemName; ?></a></li>
                   <?php
                 }
                 else
                 {
                   // not first li
                   ?>
-                  <li onclick="location.href='<?php echo $menuElement->itemUrl; ?>';"><a href="<?php echo $menuElement->itemUrl; ?>"><?php echo $menuElement->itemName; ?></a></li>
+                  <li onclick="location.href='<?php echo url('/').'/'.$menuElement->itemUrl; ?>';"><a href="<?php echo url('/').'/'.$menuElement->itemUrl; ?>"><?php echo $menuElement->itemName; ?></a></li>
                   <?php
                 }
                 ?>

@@ -6,7 +6,7 @@
   <div class="col-xs-3 noPadding" style="height: inherit;">
     <div class="mainSearchOpenButtonContainer" id="mainSearchOpenButton" onclick="searchToggle();">
       <!-- icon feather feather-search -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block; float: right; position: absolute; top: calc(50% - 1px); left: calc(100% - 34px); transform: translate(-50%,-50%);">
+      <svg id="searchSVG" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#CCE4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block; float: right; position: absolute; top: calc(50% - 1px); left: calc(100% - 34px); transform: translate(-50%,-50%);">
         <circle cx="11" cy="11" r="8">
         </circle>
         <line x1="22" y1="22" x2="17.9" y2="17.9">
