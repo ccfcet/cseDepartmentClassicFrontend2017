@@ -22,7 +22,7 @@
       @include('common.layouts.elements.headerRow')
 
       <div id="contentsContainer">
-        @yield("homeBody","code is poetry")
+        @yield("body","code is poetry")
       </div>
     </div>
     {{-- include search --}}

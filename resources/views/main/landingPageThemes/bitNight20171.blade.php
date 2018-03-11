@@ -1,6 +1,6 @@
-@extends('common.layouts.home')
+@extends('common.layouts.page')
 
-@section('homeBody')
+@section('body')
 <script src="<?php echo url('/'); ?>/assets/js/sub/addTransparency.js" async></script>
 <link rel="stylesheet" type="text/css" href="<?php echo url('/'); ?>/assets/css/sub/bitNight20171.php">
 <div id="bitNight20171" style="">

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Http\Controllers\Controller;
 
+use App\Helpers\Menu;
+
 class HomePageController extends Controller
 {
   /**
@@ -15,12 +17,14 @@ class HomePageController extends Controller
 
   public function load()
   {
-    $menuData = getMenuData();
+    $Menu = new Menu();
+    $menuData = $Menu->getMenuData();
 
     if(empty($menuData))
     {
       // failure or error in obtaining $menuData
       return "Unable to proceed with the request. Unable to communicate properly with backend API.";
+      abort(500);
     }
     else
     {

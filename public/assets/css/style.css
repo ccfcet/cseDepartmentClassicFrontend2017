@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Raleway:400,500,700|Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Raleway:400,500,700|Montserrat:400,700|Lora');
 
 body
 {
@@ -465,4 +465,28 @@ ul.mainMenuNested, ul.mainMenuSubNested {
   /*width: -moz-available;*/
   width: 100%;
   outline: none;
+}
+
+#pageTitle
+{
+  font-size: 45px;
+  line-height: 48px;
+  margin-top: 42px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #4d4d4d;
+}
+
+#pageP_Tag
+{
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0em;
+  margin: 24px 0;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #303030;
 }

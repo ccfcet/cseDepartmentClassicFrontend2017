@@ -14,3 +14,8 @@
 Route::get('/', 'HomePageController@load');
 
 Route::get('/academics/faculties/', 'FacultyController@main');
+
+// Catch all page controller
+Route::get('{slug}', [
+    'uses' => 'PageController@index'
+])->where('slug', '([A-Za-z0-9\-\/]+)');
